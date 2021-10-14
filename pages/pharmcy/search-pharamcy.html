@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ? Required meta tags -->
+
+    <!-- Standard css -->
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <!-- Standard css -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/hover-min.css" />
+    <!-- custom css -->
+
+    <!-- ? Standard JavaScript -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <!-- ? Standard JavaScript -->
+
+    <!-- custom JavaScript -->
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Shifa</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/logo.svg" type="image">
+    <!-- ? Favicon -->
+
+    <script>
+        console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+    </script>
+    <!-- ? JavaScript -->
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- =========== ? NavBar =========== -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <div class="first-nav">
+                <li><a href="../Basic/index.html">الرئيسية</a></li>
+                <li><a href="../Basic/about.html">من نحن</a></li>
+                <li><a href="../Basic/signup-medical.html">الكادر الطبي</a></li>
+                <li><a href="../Basic/contact.html">اتصل بنا</a></li>
+            </div>
+            <div class="second-nav">
+                <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+                <!--begin::Languages-->
+                <div class="dropdown">
+                    <!--begin::Toggle-->
+                    <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                        <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+                            <span class="symbol symbol-20 mr-3">
+                                <img src="../../media/image/ar.svg" alt="lang">
+                            </span>
+                            <span class="navi-text">العربية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end::Toggle-->
+                    <!--begin::Dropdown-->
+                    <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="navi navi-hover py-3 pr-0">
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/ar.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">العربية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/en.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">الانجليزية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/tr.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">التركية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Dropdown-->
+                </div>
+                <!--end::Languages-->
+                <li><button class="login-button" onclick="window.open('../Basic/login.html', '_self')">تسجيل الدخول</button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+
+    <main class="pharamcy-search">
+        <div class="content">
+            <!-- header of content -->
+            <div class="header">
+                <h5>يطاقة التسوق</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span> اغلاق
+                </button>
+            </div>
+            <!-- body of content -->
+            <div class="body">
+                <div class="middle">
+                    <div class="modal-heading">
+                        <p>عدد المنتجات <span>3 منتج</span></p>
+                    </div>
+                    <hr>
+                    <div class="box">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2"><img src="../../media/image/image-pharamcy/image panadol.svg" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <h5>بانادول أكسترا , 50 مجم / 500 مجم</h5>
+                                    <h6>لعلاج أمراض البرد والانفلونزا</h6>
+                                    <div class="prop">
+                                        <div class="edit">
+                                            <img src="../../media/image/image-pharamcy/edit-line.svg" alt="">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                تعديل
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">تعديل على
+                                                                المنتج
+                                                            </h5>
+
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="box">
+                                                                <img src="../../media/image/image-pharamcy/image panadol.svg"
+                                                                    alt="">
+                                                                <div class="text">
+                                                                    <h5>بانادول أكسترا , 50 مجم / 500 مجم</h5>
+                                                                    <h6>لعلاج أمراض البرد والانفلونزا</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="price">
+                                                                <!-- start decrease and increace -->
+                                                                <div class="input-group">
+                                                                    <span class="input-group-btn">
+                                                                        <button type="button" id="minus"
+                                                                            class="quantity-left-minus btn btn-danger btn-number"
+                                                                            data-type="minus" data-field="">
+                                                                            <i class="fas fa-minus"></i>
+                                                                        </button>
+                                                                    </span>
+                                                                    <input type="text" id="quantity1"
+                                                                        class="form-control input-number" value="10"
+                                                                        min="1" max="100">
+                                                                    <span class="input-group-btn">
+                                                                        <button type="button" id="plus"
+                                                                            class="quantity-right-plus btn btn-success btn-number"
+                                                                            data-type="plus" data-field="">
+                                                                            <i class="fas fa-plus"></i>
+                                                                        </button>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- finish decrease and increace -->
+                                                                <h5>ليرة 2</h5>
+                                                            </div>
+                                                            <div class="form-group">
+
+                                                                <textarea class="form-control"
+                                                                    id="exampleFormControlTextarea1" rows="3"
+                                                                    placeholder=" اضافه تعليق">       </textarea>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary">
+                                                                    تأكيد</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="delete">
+                                            <img src="../../media/image/image-pharamcy/delete.svg" alt="">
+                                            <button type="button" class="btn btn-primary">
+                                                مسح
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <span>1</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <h5>20ليرة</h5>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="box">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2"><img src="../../media/image/image-pharamcy/image panadol.svg" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <h5>بانادول أكسترا , 50 مجم / 500 مجم</h5>
+                                    <h6>لعلاج أمراض البرد والانفلونزا</h6>
+                                    <div class="prop">
+                                        <div class="edit">
+                                            <img src="../../media/image/image-pharamcy/edit-line.svg" alt="">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                تعديل
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">تعديل على
+                                                                المنتج
+                                                            </h5>
+
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="box">
+                                                                <img src="../../media/image/image-pharamcy/image panadol.svg"
+                                                                    alt="">
+                                                                <div class="text">
+                                                                    <h5>بانادول أكسترا , 50 مجم / 500 مجم</h5>
+                                                                    <h6>لعلاج أمراض البرد والانفلونزا</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="price">
+                                                                <!-- start decrease and increace -->
+                                                                <div class="input-group">
+                                                                    <span class="input-group-btn">
+                                                                        <button type="button" id="minus"
+                                                                            class="quantity-left-minus btn btn-danger btn-number"
+                                                                            data-type="minus" data-field="">
+                                                                            <i class="fas fa-minus"></i>
+                                                                        </button>
+                                                                    </span>
+                                                                    <input type="text" id="quantity1"
+                                                                        class="form-control input-number" value="10"
+                                                                        min="1" max="100">
+                                                                    <span class="input-group-btn">
+                                                                        <button type="button" id="plus"
+                                                                            class="quantity-right-plus btn btn-success btn-number"
+                                                                            data-type="plus" data-field="">
+                                                                            <i class="fas fa-plus"></i>
+                                                                        </button>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- finish decrease and increace -->
+                                                                <h5>ليرة 2</h5>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary">
+                                                                    تأكيد</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="delete">
+                                            <img src="../../media/image/image-pharamcy/delete.svg" alt="">
+                                            <button type="button" class="btn btn-primary">
+                                                مسح
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <span>1</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <h5>20ليرة</h5>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="container">
+                            <h5>الحساب الكلي</h5>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>السعر الاول للمنتجات</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>50ليرة</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>خدمة التوصيل</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>20ليرة</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>السعر الكلي للمنتجات</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6><b>100ليرة</b></h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer of content -->
+            <div class="footer">
+                <button type="button" class="btn btn-primary" onclick="window.open('location.html', '_self')">
+                    <span>
+                        <b>100ليرة</b>
+                    </span>
+                    استكمال عمليه الشرا
+                </button>
+            </div>
+
+        </div>
+        <!-- start main heading -->
+        <div class="heading">
+            <h4>الصيدليه</h4>
+        </div>
+        <!-- start tab section -->
+        <section class="tabs">
+            <div class="container">
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true">
+                        <i class="fas fa-briefcase-medical"></i>
+                        الصيدليات</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                        aria-controls="nav-profile" aria-selected="false">
+                        <i class="fas fa-vial"></i>
+                        بحث عن دواء
+                    </a>
+                </div>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="form-row">
+                            <div class="form-group col-lg-4 col-md-12">
+                                <div class="position">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <select id="inputState" class="form-control selectpicker" title="اختر المحافظة">
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-12">
+                                <div class="position">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <select id="inputState" class="form-control selectpicker" title="اختر المدينة">
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-3 col-md-12">
+                                <button type="submit" class="btn btn-block searchbtn"
+                                    onclick="window.open('shefaa pharamcy.html', '_self')">
+                                    <i class="fas fa-search"></i>
+                                    بحث </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <section class="search">
+                            <div class="container">
+                                <div class="searches">
+                                    <div class="row">
+                                        <div class="col-lg-9 col-md-12">
+                                            <div class="input-group rounded">
+
+                                                <input type="search" class="form-control rounded"
+                                                    placeholder="   ابحث باسم الدواء او المنتج " aria-label="Search"
+                                                    aria-describedby="search-addon" />
+                                                <span>
+                                                    <i class="fas fa-search"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-12">
+                                            <button type="submit" class="btn btn-block"
+                                                onclick="window.open('pandol pharamcy.html', '_self')">
+                                                <i class="fas fa-search"></i>
+                                                بحث </button>
+                                        </div>
+                                        <div class="col-lg-1 col-md-12">
+                                            <button type="submit" class="btn btn-block camira"
+                                                onclick="window.open('upload file.html', '_self')"><i
+                                                    class="fas fa-camera-retro"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start easy section -->
+        <section class="easy">
+            <h2>دلوقتى تقدر تحصل على أدويتك بكل سهوله</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="cards">
+                            <img src="../../media/image/image-pharamcy/shape1.svg" alt="">
+                            <p>الحصول على الدواء
+                                من خلال الروشته
+                                او صوره الدواء</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="cards">
+                            <img src="../../media/image/image-pharamcy/shape2.svg" alt="">
+                            <p>امكانيه التواصل
+                                مع الصيدلي
+                                في اى وقت</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="cards">
+                            <img src="../../media/image/image-pharamcy/shape3.svg" alt="">
+                            <p>توصيل فورى
+                                للدواء خلال
+                                مده قصيره</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start code section -->
+        <section class="code">
+            <div class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row h-100">
+                                <div class="col-lg-9 col-8 d-table">
+                                    <p>أحصل على علاجك الان من خلال صوره الدواء
+                                        من خلال صوره الوصفه الطبيه</p>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <img src="../../media/image/image-pharamcy/slide2.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row h-100">
+                                <div class="col-lg-9 col-8 d-table">
+                                    <p> يصلك علاجك في اقرب وقت طوال
+                                        أيام الأسبوع</p>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <img src="../../media/image/image-pharamcy/slide1.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row h-100">
+                                <div class="col-lg-9 col-8 d-table">
+                                    <p>أحصل على علاجك الان من خلال صوره الدواء
+                                        من خلال صوره الوصفه الطبيه</p>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <img src="../../media/image/image-pharamcy/slide2.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- start app section -->
+        <section class="app">
+            <div class="container">
+                <h3>نزل تطبيق شفاء الان</h3>
+                <h5>قم بتنزيل تطبيق شفاء الان واجعل جميع الخدمات الطبيه في متناول يديك</h5>
+                <div class="img">
+                    <img src="../../media/image/image-pharamcy/app-store.png" onclick="window.open ('','_self') ">
+                    <img src="../../media/image/image-pharamcy/google.png" onclick="window.open ('','_self') ">
+                </div>
+        </section>
+    </main>
+
+    <!-- increase $ decrease button  in js-->
+    <script>
+        $(document).ready(function () {
+
+            var quantitiy1 = 0;
+            $('#plus').click(function (e) {
+                console.log("sdsds");
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                var quantity1 = parseInt($('#quantity1').val());
+
+                // If is not undefined
+
+                $('#quantity1').val(quantity1 + 1);
+
+
+                // Increment
+
+            });
+
+            $('#minus').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                var quantity1 = parseInt($('#quantity1').val());
+
+                // If is not undefined
+
+                // Increment
+                if (quantity1 > 0) {
+                    $('#quantity1').val(quantity1 - 1);
+                }
+            });
+
+        });
+    </script>
+
+
+    <!-- ? ======= footer =========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+                    <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+                    <ul class="socialicon mt-2">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+                        href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">لينكات سريعه</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+                        <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="../basic/terms.html">شروط الاستخدام</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/privacy.html">سياسه الخصوصيه</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/about.html">من نحن</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/contact.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">إحجز عن طريق</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+                        <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">الكادر الطبي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+                        <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">متوفر علي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+                        <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+                            <ul>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/google-play.png" alt="phone-icon" /></li>
+                                </a>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/apple-store.png" alt="mail-icon" /></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12">
+                            <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

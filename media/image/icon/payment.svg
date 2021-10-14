@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116" height="116" viewBox="0 0 116 116">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8289" data-name="Rectangle 8289" width="64" height="62" transform="translate(1508 3268)" fill="#4ab9b1" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_26677" data-name="Group 26677" transform="translate(-1460 -3237)">
+    <circle id="Ellipse_109" data-name="Ellipse 109" cx="58" cy="58" r="58" transform="translate(1460 3237)" fill="#fff"/>
+    <g id="Mask_Group_1593" data-name="Mask Group 1593" transform="translate(-22 -4)" clip-path="url(#clip-path)">
+      <g id="fi-rr-credit-card" transform="translate(1508 3267)">
+        <circle id="Ellipse_103" data-name="Ellipse 103" cx="4" cy="4" r="4" transform="translate(10.667 37.333)" fill="#4ab9b1"/>
+        <path id="Path_15556" data-name="Path 15556" d="M50.667,8H13.333A13.2,13.2,0,0,0,0,21.333V42.667A13.2,13.2,0,0,0,13.333,56H50.667A13.2,13.2,0,0,0,64,42.667V21.333A13.2,13.2,0,0,0,50.667,8ZM13.333,13.333H50.667a7.857,7.857,0,0,1,8,8H5.333A7.857,7.857,0,0,1,13.333,13.333ZM50.667,50.667H13.333a7.857,7.857,0,0,1-8-8v-16H58.667v16A7.857,7.857,0,0,1,50.667,50.667Z" fill="#4ab9b1"/>
+      </g>
+    </g>
+  </g>
+</svg>

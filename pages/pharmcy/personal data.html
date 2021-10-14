@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ? Required meta tags -->
+
+    <!-- Standard css -->
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <!-- Standard css -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css" />
+    <!-- custom css -->
+
+    <!-- ? Standard JavaScript -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <!-- ? Standard JavaScript -->
+
+    <!-- custom JavaScript -->
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Shifa</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/logo.svg" type="image">
+    <!-- ? Favicon -->
+
+    <script>
+        console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+    </script>
+    <!-- ? JavaScript -->
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- =========== ? NavBar =========== -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <div class="first-nav">
+                <li><a href="../Basic/index.html">الرئيسية</a></li>
+                <li><a href="../Basic/about.html">من نحن</a></li>
+                <li><a href="../Basic/signup-medical.html">الكادر الطبي</a></li>
+                <li><a href="../Basic/contact.html">اتصل بنا</a></li>
+            </div>
+            <div class="second-nav">
+                <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+                <!--begin::Languages-->
+                <div class="dropdown">
+                    <!--begin::Toggle-->
+                    <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                        <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+                            <span class="symbol symbol-20 mr-3">
+                                <img src="../../media/image/ar.svg" alt="lang">
+                            </span>
+                            <span class="navi-text">العربية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end::Toggle-->
+                    <!--begin::Dropdown-->
+                    <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="navi navi-hover py-3 pr-0">
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/ar.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">العربية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/en.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">الانجليزية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/tr.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">التركية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Dropdown-->
+                </div>
+                <!--end::Languages-->
+                <li><button class="login-button" onclick="window.open('../Basic/login.html', '_self')">تسجيل الدخول</button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+
+    <style>
+        body {
+            background-color: #F7F7F7;
+        }
+    </style>
+    <section class="data-pharamcy">
+        <div class="personal-data">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-3 col-md-12">
+                        <div class="vertical-tab" role="tabpanel">
+                            <!-- Nav tabs -->
+                            <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-personality-tab" data-toggle="pill"
+                                    href="#Section1" role="tab" aria-controls="v-pills-personality"
+                                    aria-selected="true">بياناتي الشخصيه</a>
+                                <a class="nav-link" id="v-pills-appointments-tab" data-toggle="pill"
+                                    href="#Section2" role="tab" aria-controls="v-pills-appointments"
+                                    aria-selected="false">مواعيدي</a>
+                                <a class="nav-link" id="v-pills-password-tab" data-toggle="pill" href="#Section3"
+                                    role="tab" aria-controls="v-pills-password" aria-selected="false">تغيير كلمه المرور</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <!-- Tab panes -->
+                        <div class="tab-content tabs">
+                            <div role="tabpanel" class="tab-pane fade in active show in" id="Section1">
+                                <div class="personal">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-edit">
+                                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                            <label for="imageUpload"></label>
+                                        </div>
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview"
+                                                style="background-image: url(../../media/image/image-pharamcy/un.pngkown.png);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ========= Upload image ========= -->
+                                    <script>
+                                        function readURL(input) {
+                                            if (input.files && input.files[0]) {
+                                                var reader = new FileReader();
+                                                reader.onload = function (e) {
+                                                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                                                    $('#imagePreview').hide();
+                                                    $('#imagePreview').fadeIn(650);
+                                                }
+                                                reader.readAsDataURL(input.files[0]);
+                                            }
+                                        }
+                                        $("#imageUpload").change(function () {
+                                            readURL(this);
+                                        });
+                                    </script>
+                                    
+                                    <!-- <script>
+                                        $(function () {
+                                            $(".append-btn").on('click', function () {
+                                                var ele = $(this).closest('.append').clone(true);
+                                                $(this).closest('.append').after(ele);
+                                            })
+                                            $(".details-detection-btn").on('click', function () {
+                                                var ele = $(this).closest('.details-detection').clone(true);
+                                                $(this).closest('.details-detection').after(ele);
+                                            })
+                                        })
+                                    </script> -->
+                                    <!-- ========= Upload image ========= -->
+
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">اسم الصيدليه</label>
+                                            <input type="text" class="form-control" placeholder="اكتب اسم الصيدلية">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">التخصص </label>
+                                            <input type="text" class="form-control" placeholder="اكتب اسم التخصص">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputtext">الدرجه العلميه </label>
+                                            <input type="text" class="form-control"
+                                                placeholder="اكتب اسم الدرجة العلمية">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">معلومات عنى </label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-block">حفظ</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section2">
+                                <div class="data-work">
+                                    <form>
+                                        <div class="append">
+                                            <span class="btn btn-block append-btn"> اضافه خدمه + </span>
+                                            <div class="form-group " id="items">
+
+                                                <label for="exampleInputtext">خدماتى</label>
+                                                <input type="text" class="form-control" placeholder="  ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputtext">رقم الهاتف </label>
+                                                <input type="text" class="form-control" placeholder="  ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputtext">مواعيد العمل </label>
+                                                <input type="text" class="form-control" placeholder="   ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">تعليمات للعمل </label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                    placeholder="أكتب تعليمات للمرضى هنا لتظهر في ملفك الشخصى">       </textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-block anther">حفظ</button>
+                                    </form>
+                                    <script>
+                                        $(".append-btn").click(function () {
+                                          $('.append').after('<div class="append"> <span class="btn btn-block remove-btn"> حذف </span><div class="form-group " id="items"><label for="exampleInputtext">خدماتى</label> <input type="text" class="form-control" placeholder=" "></div><div class="form-group"> <label for="exampleInputtext">رقم الهاتف </label> <input type="text" class="form-control" placeholder=" "></div><div class="form-group"> <label for="exampleInputtext">مواعيد العمل </label> <input type="text" class="form-control" placeholder=" "></div><div class="form-group"> <label for="exampleFormControlTextarea1">تعليمات للعمل </label><textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="أكتب تعليمات للمرضى هنا لتظهر في ملفك الشخصى"> </textarea></div></div>');
+                                          $('.selectpicker').selectpicker('render');
+                                        });
+                  
+                                        $(".data-work").on("click", ".remove-btn", function (e) {
+                                          $(this).parents('.append').remove();
+                                        });
+                                      </script>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                <div class="location">
+                                    <div class="container">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13671323.845502045!2d8.17936433656703!3d33.22129065772561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb1f895d671d5b66!2sCRAZY%20IDEA!5e0!3m2!1sen!2seg!4v1623141692056!5m2!1sen!2seg"
+                                            width="1" height="850" style="border:0;" allowfullscreen="yes"
+                                            loading="lazy"></iframe>
+                                        <div class="manual-search">
+                                            <h4>تحديد الموقع يدوي</h4>
+                                            <p>قم بملىء البيانات التاليه ان كنت ترغب في
+                                                تحديد موقعك يدويا</p>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">أختر المحافظه </label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option value="Select"> </option>
+                                                        <option value="apples"></option>
+                                                        <option value="oranges"></option>
+                                                        <option value="apples + oranges"></option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">أختر المدينه </label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option value="Select"> </option>
+                                                        <option value="apples"></option>
+                                                        <option value="oranges"></option>
+                                                        <option value="apples + oranges"></option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputtext"> </label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder=" دخل اسم المنطقه  ">
+                                                </div>
+                                                <button type="submit" class="btn btn-block">حفظ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? ======= footer =========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+                    <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+                    <ul class="socialicon mt-2">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+                        href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">لينكات سريعه</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+                        <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="../basic/terms.html">شروط الاستخدام</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/privacy.html">سياسه الخصوصيه</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/about.html">من نحن</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/contact.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">إحجز عن طريق</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+                        <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">الكادر الطبي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+                        <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">متوفر علي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+                        <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+                            <ul>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/google-play.png" alt="phone-icon" /></li>
+                                </a>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/apple-store.png" alt="mail-icon" /></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12">
+                            <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

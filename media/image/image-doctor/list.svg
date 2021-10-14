@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8515" data-name="Rectangle 8515" width="24" height="24" transform="translate(251 510)" fill="#151534" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="list" transform="translate(-251 -510)" clip-path="url(#clip-path)">
+    <g id="fi-rr-apps-sort" transform="translate(251 510)">
+      <path id="Path_15771" data-name="Path 15771" d="M7,0H4A4,4,0,0,0,0,4V7a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V4A4,4,0,0,0,7,0ZM9,7A2,2,0,0,1,7,9H4A2,2,0,0,1,2,7V4A2,2,0,0,1,4,2H7A2,2,0,0,1,9,4Z" fill="#151534"/>
+      <path id="Path_15772" data-name="Path 15772" d="M7,13H4a4,4,0,0,0-4,4v3a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V17A4,4,0,0,0,7,13Zm2,7a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2H7a2,2,0,0,1,2,2Z" fill="#151534"/>
+      <path id="Path_15773" data-name="Path 15773" d="M22.293,19.049,20,21.339V2.633l2.293,2.29a1,1,0,1,0,1.414-1.415L21.12.925a3,3,0,0,0-4.24,0L14.293,3.508a1,1,0,0,0,1.414,1.415L18,2.633V21.339l-2.293-2.29a1,1,0,1,0-1.414,1.415l2.587,2.583a3,3,0,0,0,4.24,0l2.587-2.583a1,1,0,0,0-1.414-1.415Z" fill="#151534"/>
+    </g>
+  </g>
+</svg>

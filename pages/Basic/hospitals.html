@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ? Required meta tags -->
+
+    <!-- Standard css -->
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <!-- Standard css -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css" />
+    <!-- custom css -->
+
+    <!-- ? Standard JavaScript -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <!-- ? Standard JavaScript -->
+
+    <!-- custom JavaScript -->
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Shifa</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/logo.svg" type="image">
+    <!-- ? Favicon -->
+
+    <script>
+        console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+    </script>
+    <!-- ? JavaScript -->
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- =========== ? NavBar =========== -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <div class="first-nav">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="signup-medical.html">الكادر الطبي</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </div>
+            <div class="second-nav">
+                <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+                <!--begin::Languages-->
+                <div class="dropdown">
+                    <!--begin::Toggle-->
+                    <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                        <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+                            <span class="symbol symbol-20 mr-3">
+                                <img src="../../media/image/ar.svg" alt="lang">
+                            </span>
+                            <span class="navi-text">العربية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end::Toggle-->
+                    <!--begin::Dropdown-->
+                    <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="navi navi-hover py-3 pr-0">
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/ar.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">العربية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/en.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">الانجليزية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/tr.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">التركية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Dropdown-->
+                </div>
+                <!--end::Languages-->
+                <li><button class="login-button" onclick="window.open('login.html', '_self')">تسجيل الدخول</button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+    <style>
+        body {
+            background-color: #F7F7F7;
+        }
+    </style>
+    <!-- =========== ? Special header =========== -->
+    <section class="special-header">
+        <div class="container-fluid">
+            <div class="row">
+                <img src="../../media/image/home/speial-header.jpg" alt="">
+                <h2>مستشفيات شفاء</h2>
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? Special header =========== -->
+
+    <!-- =========== ? reservation =========== -->
+    <section class="reservation">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-doctor-tab" data-toggle="tab" href="#nav-doctor"
+                            role="tab" aria-controls="nav-doctor" aria-selected="true">
+                            <i class="far fa-calendar-alt"></i> حجز طبيب
+                        </a>
+                        <a class="nav-item nav-link" id="nav-nurse-tab" data-toggle="tab" href="#nav-nurse" role="tab"
+                            aria-controls="nav-nurse" aria-selected="false">
+                            <i class="fas fa-medkit"></i> حجز ممرض
+                        </a>
+                        <a class="nav-item nav-link" id="nav-hospital-tab" data-toggle="tab" href="#nav-hospital"
+                            role="tab" aria-controls="nav-hospital" aria-selected="false">
+                            <i class="fas fa-ambulance"></i> حجز مستشفي
+                        </a>
+                        <a class="nav-item nav-link" id="nav-pharmacy-tab" data-toggle="tab" href="#nav-pharmacy"
+                            role="tab" aria-controls="nav-pharmacy" aria-selected="false">
+                            <i class="fas fa-trophy"></i> طلب دواء
+                        </a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- ============ Doctor tab ============ -->
+                    <div class="tab-pane fade show active" id="nav-doctor" role="tabpanel"
+                        aria-labelledby="nav-doctor-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر التخصص" name="" id="">
+                                    <option value="1">اسنان</option>
+                                    <option value="2">جلدية</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المحافظه" name="" id="">
+                                    <option value="1">الغربية</option>
+                                    <option value="2">الدقهلية</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المنطقه" name="" id="">
+                                    <option value="1">المشحمة</option>
+                                    <option value="2">السبع بنات</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <button class="btn w-100 searchbtn" onclick="window.open('../doctor/Doctor General Specialty.html', '_self')"><i class="fas fa-search"></i> ابحث</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============ Doctor tab ============ -->
+
+                    <!-- ============ Nurse tab ============ -->
+                    <div class="tab-pane fade" id="nav-nurse" role="tabpanel" aria-labelledby="nav-nurse-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر التخصص" name="" id="">
+                                    <option value="1">اسنان</option>
+                                    <option value="2">جلدية</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المحافظه" name="" id="">
+                                    <option value="1">الغربية</option>
+                                    <option value="2">الدقهلية</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المنطقه" name="" id="">
+                                    <option value="1">المشحمة</option>
+                                    <option value="2">السبع بنات</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <button class="btn w-100 searchbtn" onclick="window.open('../nursing/Nursing-HealthCare-Service.html', '_self')"><i class="fas fa-search"></i> ابحث</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============ Nurse tab ============ -->
+
+                    <!-- ============ hospital tab ============ -->
+                    <div class="tab-pane fade" id="nav-hospital" role="tabpanel" aria-labelledby="nav-hospital-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المحافظه" name="" id="">
+                                    <option value="1">الغربية</option>
+                                    <option value="2">الدقهلية</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المدينة" name="" id="">
+                                    <option value="1">المحلة</option>
+                                    <option value="2">المنصورة</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المستشفى" name="" id="">
+                                    <option value="1">مستشفى الجامعة</option>
+                                    <option value="2">مستشفى القصر العيني</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <button class="btn w-100 searchbtn" onclick="window.open('../hospital/search_hospital.html', '_self')"><i class="fas fa-search"></i> ابحث</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============ hospital tab ============ -->
+
+                    <!-- ============ pharmacy tab ============ -->
+                    <div class="tab-pane fade" id="nav-pharmacy" role="tabpanel" aria-labelledby="nav-pharmacy-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المحافظه" name="" id="">
+                                    <option value="1">الغربية</option>
+                                    <option value="2">الدقهلية</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر المدينة" name="" id="">
+                                    <option value="1">المحلة</option>
+                                    <option value="2">المنصورة</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <select class="form-control selectpicker" title="أختر الصيدلية" name="" id="">
+                                    <option value="1">الطرشوبي</option>
+                                    <option value="2">زيدان</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <button class="btn w-100 searchbtn" onclick="window.open('../pharmcy/shefaa pharamcy.html', '_self')"><i class="fas fa-search"></i> ابحث</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============ pharmacy tab ============ -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? reservation =========== -->
+
+    <!-- =========== spcialties =========== -->
+    <section class="hospitals">
+        <div class="container">
+            <div class="row">
+                <div class="hospitals-result">
+                    <div class="search">
+                        <input type="search" name="search-spcialties" id="search-spcialties" class="form-control"
+                            placeholder="ابحث عن الطبيب بالمنطقه">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="row">
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team1.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي الصفوه التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team2.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي الربيع التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team3.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي الربيع التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team4.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي زايد التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team1.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي الصفوه التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team2.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي الربيع التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team3.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي الربيع التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+
+                        <!-- ============ Hospital ============ -->
+                        <div class="col-lg-6 col-md-12 mb-5">
+                            <img src="../../media/image/home/team4.jpg" alt="team">
+                            <a href="../hospital/single_hospital.html">
+                                <p>مستشفي زايد التخصصى</p>
+                            </a>
+                        </div>
+                        <!-- ============ Hospital ============ -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== spcialties =========== -->
+
+    <!-- ? ======= footer =========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+                    <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+                    <ul class="socialicon mt-2">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+                        href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">لينكات سريعه</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+                        <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="terms.html">شروط الاستخدام</a></li>
+                                <li> <a class="hvr-float-shadow" href="privacy.html">سياسه الخصوصيه</a></li>
+                                <li> <a class="hvr-float-shadow" href="about.html">من نحن</a></li>
+                                <li> <a class="hvr-float-shadow" href="contact.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">إحجز عن طريق</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+                        <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">الكادر الطبي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+                        <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">متوفر علي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+                        <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+                            <ul>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/google-play.png" alt="phone-icon" /></li>
+                                </a>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/apple-store.png" alt="mail-icon" /></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12">
+                            <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ? ======= footer =========== -->
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

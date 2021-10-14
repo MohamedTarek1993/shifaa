@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="59" viewBox="0 0 59 59">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8646" data-name="Rectangle 8646" width="59" height="59" transform="translate(585 471)" fill="#3f4394" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1765" data-name="Mask Group 1765" transform="translate(-585 -471)" clip-path="url(#clip-path)">
+    <g id="pharmacy" transform="translate(585 471)">
+      <g id="Group_27550" data-name="Group 27550">
+        <g id="Group_27549" data-name="Group 27549">
+          <path id="Path_15957" data-name="Path 15957" d="M50.36,8.64A29.5,29.5,0,0,0,8.64,50.36,29.5,29.5,0,0,0,50.36,8.64ZM47.915,47.915a26.043,26.043,0,1,1-36.83-36.83,26.043,26.043,0,1,1,36.83,36.83Z" fill="#3f4394"/>
+        </g>
+      </g>
+      <g id="Group_27552" data-name="Group 27552">
+        <g id="Group_27551" data-name="Group 27551">
+          <path id="Path_15958" data-name="Path 15958" d="M36.79,22.21V12.033H22.21V22.21H12.033V36.79H22.21V46.967H36.79V36.79H46.967V22.21Zm6.72,11.123H33.333V43.51H25.667V33.333H15.49V25.667H25.667V15.49h7.666V25.667H43.51Z" fill="#3f4394"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

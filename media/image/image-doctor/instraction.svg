@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8156" data-name="Rectangle 8156" width="32" height="32" transform="translate(256 422)" fill="#3f3fa0" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1527" data-name="Mask Group 1527" transform="translate(-256 -422)" clip-path="url(#clip-path)">
+    <g id="fi-rr-comment" transform="translate(256.015 422)">
+      <path id="Path_15367" data-name="Path 15367" d="M31.968,14.995A16,16,0,1,0,16.007,31.982h9.3a6.667,6.667,0,0,0,6.66-6.66ZM29.3,25.322a4,4,0,0,1-4,4h-9.3a13.375,13.375,0,0,1-9.958-4.453,13.209,13.209,0,0,1-3.3-10.408,13.377,13.377,0,0,1,11.53-11.67,14.071,14.071,0,0,1,1.732-.109,13.215,13.215,0,0,1,8.5,3.064,13.375,13.375,0,0,1,4.8,9.38Z" transform="translate(0.001 0.018)" fill="#3f3fa0"/>
+      <path id="Path_15368" data-name="Path 15368" d="M6.577,7.909H11.9a1.332,1.332,0,1,0,0-2.664H6.577a1.332,1.332,0,0,0,0,2.664Z" transform="translate(4.081 4.111)" fill="#3f3fa0"/>
+      <path id="Path_15369" data-name="Path 15369" d="M17.233,8.242H6.577a1.332,1.332,0,0,0,0,2.664H17.233a1.332,1.332,0,1,0,0-2.664Z" transform="translate(4.081 6.442)" fill="#3f3fa0"/>
+      <path id="Path_15370" data-name="Path 15370" d="M17.233,11.239H6.577a1.332,1.332,0,1,0,0,2.664H17.233a1.332,1.332,0,1,0,0-2.664Z" transform="translate(4.081 8.773)" fill="#3f3fa0"/>
+    </g>
+  </g>
+</svg>

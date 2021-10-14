@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ? Required meta tags -->
+
+    <!-- Standard css -->
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <!-- Standard css -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="../../css/hover-min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/flag-icon.min.css" />
+    <!-- custom css -->
+
+    <!-- ? Standard JavaScript -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <!-- ? Standard JavaScript -->
+
+    <!-- custom JavaScript -->
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Shifa</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/logo.svg" type="image">
+    <!-- ? Favicon -->
+
+    <script>
+        console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+    </script>
+    <!-- ? JavaScript -->
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- =========== ? NavBar =========== -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <div class="first-nav">
+                <li><a href="../Basic/index.html">الرئيسية</a></li>
+                <li><a href="../Basic/about.html">من نحن</a></li>
+                <li><a href="../Basic/signup-medical.html">الكادر الطبي</a></li>
+                <li><a href="../Basic/contact.html">اتصل بنا</a></li>
+            </div>
+            <div class="second-nav">
+                <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+                <!--begin::Languages-->
+                <div class="dropdown">
+                    <!--begin::Toggle-->
+                    <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                        <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+                            <span class="symbol symbol-20 mr-3">
+                                <img src="../../media/image/ar.svg" alt="lang">
+                            </span>
+                            <span class="navi-text">العربية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end::Toggle-->
+                    <!--begin::Dropdown-->
+                    <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="navi navi-hover py-3 pr-0">
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/ar.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">العربية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/en.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">الانجليزية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/tr.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">التركية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Dropdown-->
+                </div>
+                <!--end::Languages-->
+                <li><button class="login-button" onclick="window.open('../Basic/login.html', '_self')">تسجيل الدخول</button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+
+    <style>
+        body {
+            background-color: #FCFCFC;
+        }
+    </style>
+    <!-- =========== ? Header hospital =========== -->
+    <section class="header-hospital">
+        <img src="../../media/image/hospital/header.jpg" alt="header">
+        <h2>مستشفي الصفوه التخصصي</h2>
+    </section>
+    <!-- =========== ? Header hospital =========== -->
+
+    <!-- =========== ? hospital profile user =========== -->
+    <section class="hospital_profile_user">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <!-- =========== card doctor =========== -->
+                    <div class="card-doctor">
+                        <img src="../../media/image/hospital/doctor.jpg" alt="doctor">
+                        <div class="des-doctor">
+                            <p>د/ ليلاس الشعراوي</p>
+                            <span class="hospital-name">الصفوه التخصصي</span>
+                            <!-- star -->
+                            <div class='rating-stars'>
+                                <ul id='stars'>
+                                    <li class='star selected' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star selected' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star selected' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- star -->
+                            <hr>
+                            <div class="specialty">
+                                <i class="fas fa-stethoscope"></i>
+                                <span>استشاري امراض الباطنه والصدر</span>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>شارع الحر- عمارات الحي- طرابلس-تركيا</span>
+                            </div>
+                            <div class="time">
+                                <i class="far fa-clock"></i>
+                                <span>مواعيد العمل يوميا خلال 24 ساعه</span>
+                            </div>
+                            <div class="wallet">
+                                <i class="fas fa-wallet"></i>
+                                <span>سعر الخدمه 100 ليرة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =========== card doctor =========== -->
+
+                    <ul class="nav nav-tabs w-100 p-0 mb-5" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab"
+                                aria-controls="about" aria-selected="true">عن الطبيب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="rateing-tab" data-toggle="tab" href="#rateing" role="tab"
+                                aria-controls="rateing" aria-selected="false">التقييمات</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content w-100" id="myTabContent">
+                        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                            <div class="info p-4">
+                                <h4><i class="fas fa-info-circle"></i> معلومات عن الطبيب</h4>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                    مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من
+                                    الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد</p>
+                            </div>
+                            <div class="info p-4">
+                                <h4><i class="fas fa-stethoscope"></i> خدمات الطبيب</h4>
+                                <ul class="servicesul">
+                                    <li>عنايه مركزه</li>
+                                    <li>عمليات جراحيه</li>
+                                    <li>قسم استقبال</li>
+                                    <li>عياده للكشف</li>
+                                    <li>قسم للحوادث</li>
+                                    <li>معمل تحاليل</li>
+                                </ul>
+                            </div>
+                            <div class="info p-4">
+                                <h4><i class="far fa-comment-dots"></i> تعليمات للمرضى</h4>
+                                <ul class="instructionsul">
+                                    <li>ضروره الحضور بالكمامه</li>
+                                    <li>عدم احضار الأطفال </li>
+                                    <li>الدخول للطبيب باسبقيه الحضور</li>
+                                    <li>إعطاء بيانات المريض كامله</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade rateing-section w-100" id="rateing" role="tabpanel"
+                            aria-labelledby="rateing-tab">
+                            <h4><i class="fas fa-star"></i> تقييمات المرضي</h4>
+                            <!-- star -->
+                            <div class='rating-stars d-flex justify-content-center'>
+                                <ul id='stars'>
+                                    <li class='star selected' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star selected' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star selected' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                    <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- star -->
+                            <p class="overall">التقييم العام <span>400 زائر</span></p>
+                            <!-- opinions card -->
+                            <div class="opinions">
+                                <!-- star -->
+                                <div class='rating-stars'>
+                                    <ul id='stars'>
+                                        <li class='star selected' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star selected' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star selected' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- star -->
+                                <p>دكتور شاطر جدا ومحترم ومش هيكون اخر تعامل بينا
+                                    وانصح الكل بيه وهو في قمه الاخلاق</p>
+                                <h6>أحمد عادل</h6>
+                            </div>
+                            <!-- opinions card -->
+
+                            <!-- opinions card -->
+                            <div class="opinions">
+                                <!-- star -->
+                                <div class='rating-stars'>
+                                    <ul id='stars'>
+                                        <li class='star selected' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star selected' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star selected' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- star -->
+                                <p>دكتور شاطر جدا ومحترم ومش هيكون اخر تعامل بينا
+                                    وانصح الكل بيه وهو في قمه الاخلاق</p>
+                                <h6>أحمد عادل</h6>
+                            </div>
+                            <!-- opinions card -->
+
+                            <!-- opinions card -->
+                            <div class="opinions">
+                                <!-- star -->
+                                <div class='rating-stars'>
+                                    <ul id='stars'>
+                                        <li class='star selected' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star selected' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star selected' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                        <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- star -->
+                                <p>دكتور شاطر جدا ومحترم ومش هيكون اخر تعامل بينا
+                                    وانصح الكل بيه وهو في قمه الاخلاق</p>
+                                <h6>أحمد عادل</h6>
+                            </div>
+                            <!-- opinions card -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="schedule">
+                        <h4>جدول اعمالى</h4>
+                        <div class="appointments">
+                            <span class="my-schedule">01:00 pm</span>
+                            <span class="my-schedule disable">02:00 pm</span>
+                            <span class="my-schedule disable">03:00 pm</span>
+                            <span class="my-schedule">04:00 pm</span>
+                            <span class="my-schedule">05:00 pm</span>
+                            <span class="my-schedule disable">06:00 pm</span>
+                            <span class="my-schedule">07:00 pm</span>
+                            <span class="my-schedule">08:00 pm</span>
+                            <span class="my-schedule">09:00 pm</span>
+                        </div>
+                    </div>
+                    <div class="reservation-data">
+                        <h4>بيانات الحجز</h4>
+                        <div class="detection-date">
+                            <h5>ميعاد الكشف</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <label>
+                                        <input type="radio" name="product" class="card-input-element" />
+                                        <div class="panel panel-default card-input">
+                                            <div class="panel-body">
+                                                01:00 pm
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="product" class="card-input-element" />
+                                        <div class="panel panel-default card-input">
+                                            <div class="panel-body">
+                                                02:00 pm
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="product" class="card-input-element" />
+                                        <div class="panel panel-default card-input">
+                                            <div class="panel-body">
+                                                03:00 pm
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="product" class="card-input-element" />
+                                        <div class="panel panel-default card-input disabled">
+                                            <div class="panel-body">
+                                                04:00 pm
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="product" class="card-input-element" />
+                                        <div class="panel panel-default card-input">
+                                            <div class="panel-body">
+                                                05:00 pm
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="product" class="card-input-element" />
+                                        <div class="panel panel-default card-input disabled">
+                                            <div class="panel-body">
+                                                06:00 pm
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="product" class="card-input-element" />
+                                        <div class="panel panel-default card-input">
+                                            <div class="panel-body">
+                                                07:00 pm
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="patient-data">
+                            <h5>بيانات المريض</h5>
+                            <div class="name">
+                                <i class="far fa-user"></i>
+                                <input type="text" class="form-control" placeholder="اسم المريض">
+                            </div>
+                            <div class="number">
+                                <i class="fas fa-phone"></i>
+                                <input type="text" class="form-control" placeholder="رقم الهاتف">
+                                <select class="selectpicker">
+                                    <option data-icon="flag-icon flag-icon-eg"></option>
+                                    <option data-icon="flag-icon flag-icon-tr"></option>
+                                    <option data-icon="flag-icon flag-icon-gb-eng"></option>
+                                </select>
+                            </div>
+                            <div class="email">
+                                <i class="far fa-envelope"></i>
+                                <input type="email" class="form-control" placeholder="البريد الالكتروني">
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <h5>نوع الدفع</h5>
+                            <label class="rad">الدفع اونلاين
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="rad">الدفع كاش
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <button class="btn reservationbtn hvr-bob">حجز الطبيب</button>
+                        <button class="btn cancelbtn hvr-bob">الغاء</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? hospital profile user =========== -->
+
+    <!-- ? ======= footer =========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+                    <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+                    <ul class="socialicon mt-2">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+                        href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">لينكات سريعه</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+                        <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="../basic/terms.html">شروط الاستخدام</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/privacy.html">سياسه الخصوصيه</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/about.html">من نحن</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/contact.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">إحجز عن طريق</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+                        <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">الكادر الطبي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+                        <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">متوفر علي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+                        <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+                            <ul>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/google-play.png" alt="phone-icon" /></li>
+                                </a>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/apple-store.png" alt="mail-icon" /></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12">
+                            <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.562" height="43.562" viewBox="0 0 43.562 43.562">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8080" data-name="Rectangle 8080" width="43.562" height="43.562" fill="#4ab9b1" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1476" data-name="Mask Group 1476" clip-path="url(#clip-path)">
+    <g id="medicine-bottle-line">
+      <path id="Path_15242" data-name="Path 15242" d="M0,0H43.562V43.562H0Z" fill="none"/>
+      <path id="Path_15243" data-name="Path 15243" d="M32.56,2.667V6.3h-3.63v5.445a5.445,5.445,0,0,1,5.445,5.445V37.153a1.816,1.816,0,0,1-1.815,1.815H7.148a1.816,1.816,0,0,1-1.815-1.815V17.187a5.445,5.445,0,0,1,5.445-5.445V6.3H7.148V2.667Zm-3.63,12.706H10.779a1.816,1.816,0,0,0-1.815,1.815V35.338H30.744V17.187A1.816,1.816,0,0,0,28.929,15.372ZM21.669,19v3.63H25.3v3.63H21.667l0,3.63h-3.63l0-3.63H14.409v-3.63h3.63V19ZM25.3,6.3H14.409v5.445H25.3Z" transform="translate(1.927 0.963)" fill="#4ab9b1"/>
+    </g>
+  </g>
+</svg>

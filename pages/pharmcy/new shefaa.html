@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ? Required meta tags -->
+
+    <!-- Standard css -->
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <!-- Standard css -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="../../css/hover-min.css" />
+    <!-- custom css -->
+
+    <!-- ? Standard JavaScript -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <!-- ? Standard JavaScript -->
+
+    <!-- custom JavaScript -->
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Shifa</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/logo.svg" type="image">
+    <!-- ? Favicon -->
+
+    <script>
+        console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+    </script>
+    <!-- ? JavaScript -->
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- =========== ? NavBar =========== -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <div class="first-nav">
+                <li><a href="../Basic/index.html">الرئيسية</a></li>
+                <li><a href="../Basic/about.html">من نحن</a></li>
+                <li><a href="../Basic/signup-medical.html">الكادر الطبي</a></li>
+                <li><a href="../Basic/contact.html">اتصل بنا</a></li>
+            </div>
+            <div class="second-nav">
+                <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+                <!--begin::Languages-->
+                <div class="dropdown">
+                    <!--begin::Toggle-->
+                    <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                        <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+                            <span class="symbol symbol-20 mr-3">
+                                <img src="../../media/image/ar.svg" alt="lang">
+                            </span>
+                            <span class="navi-text">العربية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end::Toggle-->
+                    <!--begin::Dropdown-->
+                    <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="navi navi-hover py-3 pr-0">
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/ar.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">العربية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/en.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">الانجليزية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/tr.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">التركية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Dropdown-->
+                </div>
+                <!--end::Languages-->
+                <li><button class="login-button" onclick="window.open('../Basic/login.html', '_self')">تسجيل
+                        الدخول</button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+
+    <!-- start upload -->
+    <section class="upload">
+        <h1>صيدليه الشفاء الجديده
+        </h1>
+        <div class="avatar-upload">
+            <div class="avatar-edit">
+                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                <label for="imageUpload"> <i class="fas fa-camera 3x"></i></label>
+            </div>
+            <div class="avatar-preview">
+                <div id="imagePreview" class="preview">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+    <!-- on click image in js -->
+    <script>
+        $(document).ready(function () {
+            $('img.thumbnail').click(function () {
+                window.location.href = this.id + '.html';
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('img.thumbnail').click(function () {
+                window.location.href = 'personal data.html';
+            });
+        });
+    </script>
+
+
+    <!-- start personal data -->
+    <section class="personal-data">
+        <div class="container">
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">بيانات الصيدلية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="product-tab" data-toggle="tab" href="#product" role="tab"
+                        aria-controls="product" aria-selected="true">المنتجات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="rating-tab" data-toggle="tab" href="#rating" role="tab"
+                        aria-controls="rating" aria-selected="false">التقييمات</a>
+                </li>
+            </ul>
+            <div class="tab-content info_hospital" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="contain">
+                            <div class="container">
+                                <!-- start row -->
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12">
+                                        <img src="../../media/image/image-pharamcy/doctor.jpg"
+                                            alt="صيدلية الشفاء الجديدة" class="image">
+                                    </div>
+                                    <div class="col-lg-8 col-md-12">
+                                        <!-- start row -->
+                                        <div class="row">
+                                            <!-- start column -->
+                                            <div class="col-md-11 col-sm-10">
+                                                <h3>صيدليه الشفاء الجديده</h3>
+                                                <h6>
+                                                    مستشفي متخصصه في امراضالصدر والباطنه وتخصص
+                                                    باطنه للاطفال
+                                                </h6>
+                                                <p class="first">
+                                                    هذا النصهو مثال لنصيمكن أن يستبدل في نفسالمساحة، لقد تم توليد هذا
+                                                    النص
+                                                    من مولد
+                                                    النصالعربى، حيث يمكنك أن تولد مثل هذا النصأو العديد من النصوصالأخرى
+                                                    إضافة إلى زيادة
+                                                    .عدد الحروف التى يولدها التطبيق
+                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النصالعربى زيادة
+                                                    عدد
+                                                    الفقرات كما تريد،
+                                                    النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                    لمصممي
+                                                    المواقع على وجه
+                                                    .الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية
+                                                    لتصميم الموقع
+                                                </p>
+                                                <p class="second">
+                                                    <span> التخصص</span> : جميع التخصصات
+                                                </p>
+                                                <hr>
+                                                <p class="third">
+                                                    <span> لدرجه العلميه</span> : جميع التخصصات
+                                                </p>
+                                            </div>
+                                            <!-- finish column -->
+                                            <!-- start column -->
+                                            <div class="col-md-1 col-sm-2 ">
+                                                <div class="img-first">
+                                                    <a href="personal data.html"><img
+                                                            src="../../media/image/image-pharamcy/edit-line.svg"></a>
+                                                </div>
+                                            </div>
+                                            <!-- finish column -->
+                                        </div>
+                                        <!-- finish row -->
+                                        <hr>
+                                        <!-- start row -->
+                                        <div class="row">
+                                            <!-- start column -->
+                                            <div class="col-md-11 col-sm-10">
+                                                <div class="service">
+                                                    <h4>بيانات العمل</h4>
+                                                    <h5>خدمات الصيدليه</h5>
+                                                    <div class="collection">
+                                                        <ul class="coll">
+                                                            <li><a href="">خدمه 24 ساعه</a></li>
+                                                            <li><a href="">خدمه توصيل</a></li>
+                                                            <li><a href=""> تركيب محاليل</a></li>
+                                                            <li><a href="">منتجات تجميل</a></li>
+                                                            <li><a href="">قسم للبرفانات</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- finish column -->
+                                            <!-- start column -->
+                                            <div class="col-md-1 col-sm-2">
+                                                <div class="img-second">
+                                                    <a href="personal data.html"><img
+                                                            src="../../media/image/image-pharamcy/edit-line.svg"></a>
+                                                </div>
+                                            </div>
+                                            <!-- finish column -->
+                                        </div>
+                                        <!-- finish row -->
+                                        <hr>
+                                        <div class="detials">
+
+                                            <h5>تفاصيل العمل</h5>
+                                            <div class="location">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <p>شارع الحر- عمارات الحي- طرابلس-تركيا</p>
+                                            </div>
+                                            <div class="location">
+                                                <i class="fas fa-clock"></i>
+                                                <p>
+                                                    مواعيد العمل
+                                                    <span> السبت للخميس </span>
+                                                </p>
+                                            </div>
+                                            <div class="location">
+                                                <i class="fas fa-phone-alt"></i>
+                                                <p>
+                                                    رقم الهاتف</span>
+                                                    <span> 010101010101 </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="instruction">
+                                            <h5>تعليمات للعملاء</h5>
+
+                                            <ul>
+                                                <li>ضروره الحضور بالكمامه</li>
+                                                <li>عدم احضار الأطفال</li>
+                                                <li>الدخول للطبيب باسبقيه الحضور</li>
+                                                <li>إعطاء بيانات المريض كامله والحفاظ علي نظافه المكان
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- finish row -->
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                            Tab 2 content
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ========== Tabs of Drugs ========== -->
+                <div class="tab-pane fade product-section w-100" id="product" role="tabpanel"
+                    aria-labelledby="product-tab">
+                    <ul class="nav nav-tabs Drugstabs" id="Drugstabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                                aria-controls="all" aria-selected="true">الكل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="drugs-tab" data-toggle="tab" href="#drugs" role="tab"
+                                aria-controls="drugs" aria-selected="false">أدوية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal" role="tab"
+                                aria-controls="personal" aria-selected="false">عناية شخصية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="equipment-tab" data-toggle="tab" href="#equipment" role="tab"
+                                aria-controls="equipment" aria-selected="false">معدات طبية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="children-tab" data-toggle="tab" href="#children" role="tab"
+                                aria-controls="children" aria-selected="false">عناية طفل</a>
+                        </li>
+                    </ul>
+                    <div class="addProduct">
+                        <button class="btn js-add-product">إضافة منتج</button>
+                    </div>
+                    <input type="search" name="searchProduct" id="searchProduct" class="form-control searchProduct "
+                        placeholder="ابحث باسم المنتج">
+                    <div class="tab-content DrugstabsContent" id="DrugstabsContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/creem.png" alt="drug">
+                                        <span class="categoryDrug">عناية شخصية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/tenta.png" alt="drug">
+                                        <span class="categoryDrug">عناية طفل</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/panadolw.png" alt="drug">
+                                        <span class="categoryDrug">أدوية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/creem.png" alt="drug">
+                                        <span class="categoryDrug">عناية شخصية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/panadolw.png" alt="drug">
+                                        <span class="categoryDrug">أدوية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/creem.png" alt="drug">
+                                        <span class="categoryDrug">عناية شخصية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="drugs" role="tabpanel" aria-labelledby="drugs-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/panadolw.png" alt="drug">
+                                        <span class="categoryDrug">أدوية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/creem.png" alt="drug">
+                                        <span class="categoryDrug">عناية شخصية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/creem.png" alt="drug">
+                                        <span class="categoryDrug">عناية شخصية</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="children" role="tabpanel" aria-labelledby="children-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="drugCard">
+                                        <img src="../../media/image/image-pharamcy/tenta.png" alt="drug">
+                                        <span class="categoryDrug">عناية طفل</span>
+                                        <p class="nameDrug">لا روش بوزاى صن بلوك</p>
+                                        <span class="descriptionDrug">Broad spectrum spf 50</span>
+                                        <p class="priceDrug">410 ليرة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== Tabs of Drugs ========== -->
+                <div class="tab-pane fade rateing-section w-100" id="rating" role="tabpanel"
+                    aria-labelledby="rating-tab">
+                    <h4><i class="fas fa-star"></i> تقييمات المرضي</h4>
+                    <!-- star -->
+                    <div class='rating-stars d-flex justify-content-center'>
+                        <ul id='stars'>
+                            <li class='star selected' title='Poor' data-value='1'>
+                                <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Fair' data-value='2'>
+                                <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Good' data-value='3'>
+                                <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'>
+                                <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'>
+                                <i class='fa fa-star fa-fw'></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- star -->
+                    <p class="overall">التقييم العام <span>400 زائر</span></p>
+                    <!-- opinions card -->
+                    <div class="opinions">
+                        <!-- star -->
+                        <div class='rating-stars'>
+                            <ul id='stars'>
+                                <li class='star selected' title='Poor' data-value='1'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Fair' data-value='2'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Good' data-value='3'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='Excellent' data-value='4'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='WOW!!!' data-value='5'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- star -->
+                        <p>دكتور شاطر جدا ومحترم ومش هيكون اخر تعامل بينا
+                            وانصح الكل بيه وهو في قمه الاخلاق</p>
+                        <h6>أحمد عادل</h6>
+                    </div>
+                    <!-- opinions card -->
+
+                    <!-- opinions card -->
+                    <div class="opinions">
+                        <!-- star -->
+                        <div class='rating-stars'>
+                            <ul id='stars'>
+                                <li class='star selected' title='Poor' data-value='1'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Fair' data-value='2'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Good' data-value='3'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='Excellent' data-value='4'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='WOW!!!' data-value='5'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- star -->
+                        <p>دكتور شاطر جدا ومحترم ومش هيكون اخر تعامل بينا
+                            وانصح الكل بيه وهو في قمه الاخلاق</p>
+                        <h6>أحمد عادل</h6>
+                    </div>
+                    <!-- opinions card -->
+
+                    <!-- opinions card -->
+                    <div class="opinions">
+                        <!-- star -->
+                        <div class='rating-stars'>
+                            <ul id='stars'>
+                                <li class='star selected' title='Poor' data-value='1'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Fair' data-value='2'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Good' data-value='3'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='Excellent' data-value='4'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='WOW!!!' data-value='5'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- star -->
+                        <p>دكتور شاطر جدا ومحترم ومش هيكون اخر تعامل بينا
+                            وانصح الكل بيه وهو في قمه الاخلاق</p>
+                        <h6>أحمد عادل</h6>
+                    </div>
+                    <!-- opinions card -->
+                </div>
+            </div>
+    </section>
+
+
+    <!-- ==================== section shopping cart ==================== -->
+    <aside class="cart js-cart addProductCart">
+        <div class="cart__header">
+            <h1 class="cart__title">إضافة منتج</h1>
+            <p class="cart__text">
+                <a class="button button--light js-toggle-cart" href="#" title="Close cart">
+                    <i class="fas fa-times mx-1"></i> اغلاق
+                </a>
+            </p>
+        </div>
+        <div class="cart__products js-cart-products">
+            <form action="">
+                <div class="form-group">
+                    <label>اسم المنتج</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>النوع</label>
+                    <select class="form-control selectpicker" title="اختر نوع المنتج">
+                        <option value="0">أدوية</option>
+                        <option value="1">عناية شخصية</option>
+                        <option value="2">معدات طبية</option>
+                        <option value="3">عناية طفل</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>السعر</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>وصف المنتج</label>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- ======== upload file ======== -->
+                <div class="file-drag-upload">
+                    <div class="container upload-photo">
+                        <div class="row">
+                            <div class="form-group files">
+                                <img src="../../media/image/image-pharamcy/gallary.svg" alt="">
+                                <input type="file" class="form-control" id="file-upload">
+                                <h6> سحب صوره المنتج او الدواء هنا او <span>تصفح جهازك</span></h6>
+                                <p>png & jpg نسمح بصور صيغتها</p>
+                                <h6 id="file-upload-filename" class="file-upload-filename"></h6>
+                                <script>
+                                    var input = document.getElementById('file-upload');
+                                    var infoArea = document.getElementById('file-upload-filename');
+
+                                    input.addEventListener('change', showFileName);
+
+                                    function showFileName(event) {
+
+                                        // the change event gives us the input it occurred in 
+                                        var input = event.srcElement;
+
+                                        // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+                                        var fileName = input.files[0].name;
+
+                                        // use fileName however fits your app best, i.e. add it into a div
+                                        infoArea.textContent = 'File name: ' + fileName;
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ======== upload file ======== -->
+                <button class="btn save">حفظ</button>
+            </form>
+        </div>
+    </aside>
+    <div class="lightbox js-lightbox js-toggle-cart"></div>
+
+
+    <!-- ========== script shopping cart ========== -->
+    <script>
+        var cartOpen = false;
+        var numberOfProducts = 0;
+
+        $('body').on('click', '.js-toggle-cart', toggleCart);
+        $('body').on('click', '.js-add-product', addProduct);
+        $('body').on('click', '.js-remove-product', removeProduct);
+
+        function toggleCart(e) {
+            e.preventDefault();
+            if (cartOpen) {
+                closeCart();
+                return;
+            }
+            openCart();
+        }
+
+        function openCart() {
+            cartOpen = true;
+            $('body').addClass('open');
+        }
+
+        function closeCart() {
+            cartOpen = false;
+            $('body').removeClass('open');
+        }
+
+        function addProduct(e) {
+            e.preventDefault();
+            openCart();
+            $('.js-cart-empty').addClass('hide');
+            var product = $('.js-cart-product-template').html();
+            $('.js-cart-products .item').prepend(product);
+            numberOfProducts++;
+        }
+        // 
+        function removeProduct(e) {
+            e.preventDefault();
+            numberOfProducts--;
+            $(this).closest('.js-cart-product').hide(250);
+            if (numberOfProducts == 0) {
+                $('.js-cart-empty').removeClass('hide');
+            }
+        }
+    </script>
+    <!-- ========== script shopping cart ========== -->
+
+    <!-- ==================== section shopping cart ==================== -->
+
+
+    <!-- ? ======= footer =========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+                    <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+                    <ul class="socialicon mt-2">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+                        href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">لينكات سريعه</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+                        <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="../basic/terms.html">شروط الاستخدام</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/privacy.html">سياسه الخصوصيه</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/about.html">من نحن</a></li>
+                                <li> <a class="hvr-float-shadow" href="../basic/contact.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">إحجز عن طريق</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+                        <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">الكادر الطبي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+                        <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">متوفر علي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+                        <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+                            <ul>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/google-play.png" alt="phone-icon" /></li>
+                                </a>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/apple-store.png" alt="mail-icon" /></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12">
+                            <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- ? Required meta tags -->
+  <meta charset="utf-8">
+  <!-- ? Required meta tags -->
+
+  <!-- Standard css -->
+  <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <!-- Standard css -->
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../css/hover-min.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.min.css" />
+  <link type="text/css" href="../../css/jquery.ui.slider-rtl.css" rel="stylesheet">
+  <!-- custom css -->
+
+  <!-- ? Standard JavaScript -->
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/all.min.js"></script>
+  <!-- ? Standard JavaScript -->
+
+  <!-- custom JavaScript -->
+  <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="../../js/bootstrap-select.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <script src="../../js/jquery.ui.slider-rtl.min.js"></script>
+  <!-- custom JavaScript -->
+
+  <!-- ? Title -->
+  <title>Shifa</title>
+  <!-- ? Title -->
+
+  <!-- ? Favicon -->
+  <link rel="icon" href="../../media/image/logo.svg" type="image">
+  <!-- ? Favicon -->
+
+  <script>
+    console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+  </script>
+  <!-- ? JavaScript -->
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+  <!-- =========== ? NavBar =========== -->
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <div class="first-nav">
+        <li><a href="../Basic/index.html">الرئيسية</a></li>
+        <li><a href="../Basic/about.html">من نحن</a></li>
+        <li><a href="../Basic/signup-medical.html">الكادر الطبي</a></li>
+        <li><a href="../Basic/contact.html">اتصل بنا</a></li>
+      </div>
+      <div class="second-nav">
+        <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+        <!--begin::Languages-->
+        <div class="dropdown">
+          <!--begin::Toggle-->
+          <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+            <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+              <span class="symbol symbol-20 mr-3">
+                <img src="../../media/image/ar.svg" alt="lang">
+              </span>
+              <span class="navi-text">العربية</span>
+              </a>
+            </div>
+          </div>
+          <!--end::Toggle-->
+          <!--begin::Dropdown-->
+          <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+            <!--begin::Nav-->
+            <ul class="navi navi-hover py-3 pr-0">
+              <!--begin::Item-->
+              <li class="navi-item">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="../../media/image/ar.svg" alt="lang">
+                  </span>
+                  <span class="navi-text">العربية</span>
+                </a>
+              </li>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <li class="navi-item">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="../../media/image/en.svg" alt="lang">
+                  </span>
+                  <span class="navi-text">الانجليزية</span>
+                </a>
+              </li>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <li class="navi-item">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="../../media/image/tr.svg" alt="lang">
+                  </span>
+                  <span class="navi-text">التركية</span>
+                </a>
+              </li>
+              <!--end::Item-->
+            </ul>
+            <!--end::Nav-->
+          </div>
+          <!--end::Dropdown-->
+        </div>
+        <!--end::Languages-->
+        <li><button class="login-button" onclick="window.open('../Basic/login.html', '_self')">تسجيل الدخول</button>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <!-- =========== ? NavBar =========== -->
+
+  <style>
+    body {
+      background-color: #FCFCFC;
+    }
+  </style>
+  <!-- =========== ? Header hospital =========== -->
+  <section class="header-hospital">
+    <img src="../../media/image/hospital/header.jpg" alt="header">
+    <h2>الأطباء</h2>
+  </section>
+  <!-- =========== ? Header hospital =========== -->
+
+  <!-- =========== ? reservation_doctor =========== -->
+  <section class="reservation_doctor nursing-health-care">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <div class="nursing-healthcare-prop">
+            <!-- search input -->
+            <div class="search">
+              <div class="input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="أبحث" aria-label="Search"
+                  aria-describedby="search-addon" />
+                <span>
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </div>
+            <hr>
+            <!-- search input -->
+            <!-- specify input -->
+            <div class="specify">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">
+                  <div class="main-heading">
+                    <img src="../../media/image/image-nursing/services.svg" alt="">
+                    <h5> نوع الخدمه</h5>
+                  </div>
+                </label>
+                <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                  <option>حدد الخدمه</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <!-- specify input -->
+            <hr>
+            <!-- specify input -->
+            <div class="specify">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">
+                  <div class="main-heading">
+                    <img src="../../media/image/image-nursing/region.svg" alt="">
+                    <h5> المنطقه</h5>
+                  </div>
+                </label>
+                <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                  <option>حدد المنطقه</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <!-- specify input -->
+            <hr>
+            <!-- specify input -->
+            <div class="specify">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">
+                  <div class="main-heading">
+                    <img src="../../media/image/image-nursing/city.svg" alt="">
+                    <h5> المدينه</h5>
+                  </div>
+                </label>
+                <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                  <option>حدد المدينه</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <!-- specify input -->
+            <hr>
+            <!-- check box input -->
+            <div class="choice">
+              <div class="main-heading">
+                <img src="../../media/image/image-nursing/Education.svg" alt="">
+                <h5> الدرجه العلميه</h5>
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">الكل</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">ممرض</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">مساعد ممرض</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">رئيس تمريض</span>
+                </label>
+
+              </div>
+              <!-- check box input -->
+            </div>
+            <!-- check box input -->
+            <hr>
+            <!-- check box input -->
+            <div class="choice">
+              <div class="main-heading">
+                <img src="../../media/image/image-nursing/language.svg" alt="">
+                <h5> اللغة</h5>
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">الكل</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">العربيه</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">الانجليزيه</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">التركيه</span>
+                </label>
+
+              </div>
+              <!-- check box input -->
+            </div>
+            <!-- check box input -->
+            <hr>
+            <!-- check box input -->
+            <div class="choice">
+              <div class="main-heading">
+                <img src="../../media/image/image-nursing/ginder.svg" alt="">
+                <h5> النوع</h5>
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">الكل</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">ممرض</span>
+                </label>
+
+              </div>
+              <div class="form-check">
+                <label class="checkbox">
+                  <span class="checkbox__input">
+                    <input type="checkbox" name="checkbox">
+                    <span class="checkbox__control">
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                        <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="radio__label">ممرضه</span>
+                </label>
+
+              </div>
+              <!-- check box input -->
+            </div>
+            <!-- check box input -->
+            <hr>
+
+            <!-- //----- Price Range slider----- -->
+            <div class="price-range-slider">
+              <div class="main-heading">
+                <img src="../../media/image/image-nursing/price.svg" alt="">
+                <h5> سعرالكشف</h5>
+              </div>
+              <p class="range-value">
+                <input type="text" id="amount" readonly>
+              </p>
+              <div id="slider-range" class="range-bar"></div>
+            </div>
+            <!-- /============= JS for Price Range slider =============/ -->
+            <script>
+              $(function () {
+                let dir = $('body').css('direction');
+                if (dir == 'rtl') {
+                  var check = true;
+                }
+                else{ 
+                  var check = false;
+                }
+                $("#slider-range").slider({
+                  range: true,
+                  isRTL: check, // RTL
+                  min: 0,
+                  max: 250,
+                  values: [0, 250],
+                  slide: function (event, ui) {
+                    $("#amount").val("ليرة" + ui.values[1] + " - ليرة" + ui.values[0]);
+                  }
+                });
+                $("#amount").val("ليرة" + $("#slider-range").slider("values", 1) +
+                  " - ليرة" + $("#slider-range").slider("values", 0));
+              });
+            </script>
+
+            <!-- //============= JS for Price Range slider ============= -->
+            <button type="submit" class="btn  btn-light login-button hvr-bob"> مسح الكل </button>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12">
+          <div class="row mt-4">
+            <div class="number-result">
+              <h4>عدد النتائج</h4><span>1120مركز طبي</span>
+            </div>
+            <div class="layout-view">
+              <select class="form-control selectpicker arrangement">
+                <option value="0">الأقل سعرا اولا</option>
+                <option value="1">الأكثر سعرا اولا</option>
+              </select>
+              <div class="btn-group btn-group-toggle align-items-center layout" data-toggle="buttons">
+                <label id="list" class="btn active">
+                  <input type="radio" name="layout" id="layout1" checked> <i class="fas fa-th-list"></i>
+                </label>
+                <label id="grid" class="btn">
+                  <input type="radio" name="layout" id="layout2"> <i class="fas fa-th-large"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <div id="posts" class="row mt-4">
+                <!-- ============= card hospital ============= -->
+                <div class="item col-12 mb-3 px-1">
+                  <a class="card border-0" href="Doctor Resrvation Step.html">
+                    <div class="row w-100 m-0">
+                      <div class="col-4 px-1">
+                        <img src="../../media/image/image-doctor/doctor1.jpg" alt="">
+                      </div>
+                      <div class="col-lg-5 col-md-8 px-2 des-hospital">
+                        <h6>مستشفي الصفوه التخصصي</h6>
+                        <p>أخصائي أمراض القلب والباطنه</p>
+                        <!-- star -->
+                        <div class='rating-stars'>
+                          <ul id='stars'>
+                            <li class='star selected' title='Poor' data-value='1'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Fair' data-value='2'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Good' data-value='3'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- star -->
+                        <div class="data-laptop d-block">
+                          <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>شارع الحر- عمارات الحي- طرابلس-تركيا</span>
+                          </div>
+                          <div class="time">
+                            <i class="fas fa-clock"></i>
+                            <span>مده الانتظار : 30:00 دقيقه</span>
+                          </div>
+                          <div class="wallet">
+                            <i class="fas fa-wallet"></i>
+                            <span>سعر الكشف : 100 ليرة</span>
+                          </div>
+                          <div class="stopwatch">
+                            <i class="fas fa-stopwatch"></i>
+                            <span>مواعيد العمل السبت-الخميس (10:00 am - 5:00 pm)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 data-mobile d-none">
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>شارع الحر- عمارات الحي- طرابلس-تركيا</span>
+                        </div>
+                        <div class="time">
+                          <i class="fas fa-clock"></i>
+                          <span>مده الانتظار : 30:00 دقيقه</span>
+                        </div>
+                        <div class="wallet">
+                          <i class="fas fa-wallet"></i>
+                          <span>سعر الكشف : 100 ليرة</span>
+                        </div>
+                        <div class="stopwatch">
+                          <i class="fas fa-stopwatch"></i>
+                          <span>مواعيد العمل السبت-الخميس (10:00 am - 5:00 pm)</span>
+                        </div>
+                      </div>
+                      <div class="col-3 div_reservation_doctor_btn p-0">
+                        <button class="btn reservation_doctor-btn">حجز الطبيب</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- ============= card hospital ============= -->
+
+                <!-- ============= card hospital ============= -->
+                <div class="item col-12 mb-3 px-1">
+                  <a class="card border-0" href="Doctor Resrvation Step.html">
+                    <div class="row w-100 m-0">
+                      <div class="col-4 px-1">
+                        <img src="../../media/image/image-doctor/doctor2.jpg" alt="">
+                      </div>
+                      <div class="col-lg-5 col-md-8 px-2 des-hospital">
+                        <h6>مستشفي الصفوه التخصصي</h6>
+                        <p>أخصائي أمراض القلب والباطنه</p>
+                        <!-- star -->
+                        <div class='rating-stars'>
+                          <ul id='stars'>
+                            <li class='star selected' title='Poor' data-value='1'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Fair' data-value='2'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Good' data-value='3'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- star -->
+                        <div class="data-laptop d-block">
+                          <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>شارع الحر- عمارات الحي- طرابلس-تركيا</span>
+                          </div>
+                          <div class="time">
+                            <i class="fas fa-clock"></i>
+                            <span>مده الانتظار : 30:00 دقيقه</span>
+                          </div>
+                          <div class="wallet">
+                            <i class="fas fa-wallet"></i>
+                            <span>سعر الكشف : 100 ليرة</span>
+                          </div>
+                          <div class="stopwatch">
+                            <i class="fas fa-stopwatch"></i>
+                            <span>مواعيد العمل السبت-الخميس (10:00 am - 5:00 pm)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 data-mobile d-none">
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>شارع الحر- عمارات الحي- طرابلس-تركيا</span>
+                        </div>
+                        <div class="time">
+                          <i class="fas fa-clock"></i>
+                          <span>مده الانتظار : 30:00 دقيقه</span>
+                        </div>
+                        <div class="wallet">
+                          <i class="fas fa-wallet"></i>
+                          <span>سعر الكشف : 100 ليرة</span>
+                        </div>
+                        <div class="stopwatch">
+                          <i class="fas fa-stopwatch"></i>
+                          <span>مواعيد العمل السبت-الخميس (10:00 am - 5:00 pm)</span>
+                        </div>
+                      </div>
+                      <div class="col-3 div_reservation_doctor_btn p-0">
+                        <button class="btn reservation_doctor-btn">حجز الطبيب</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- ============= card hospital ============= -->
+
+                <!-- ============= card hospital ============= -->
+                <div class="item col-12 mb-3 px-1">
+                  <a class="card border-0" href="Doctor Resrvation Step.html">
+                    <div class="row w-100 m-0">
+                      <div class="col-4 px-1">
+                        <img src="../../media/image/image-doctor/doctor3.jpg" alt="">
+                      </div>
+                      <div class="col-lg-5 col-md-8 px-2 des-hospital">
+                        <h6>مستشفي الصفوه التخصصي</h6>
+                        <p>أخصائي أمراض القلب والباطنه</p>
+                        <!-- star -->
+                        <div class='rating-stars'>
+                          <ul id='stars'>
+                            <li class='star selected' title='Poor' data-value='1'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Fair' data-value='2'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star selected' title='Good' data-value='3'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- star -->
+                        <div class="data-laptop d-block">
+                          <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>شارع الحر- عمارات الحي- طرابلس-تركيا</span>
+                          </div>
+                          <div class="time">
+                            <i class="fas fa-clock"></i>
+                            <span>مده الانتظار : 30:00 دقيقه</span>
+                          </div>
+                          <div class="wallet">
+                            <i class="fas fa-wallet"></i>
+                            <span>سعر الكشف : 100 ليرة</span>
+                          </div>
+                          <div class="stopwatch">
+                            <i class="fas fa-stopwatch"></i>
+                            <span>مواعيد العمل السبت-الخميس (10:00 am - 5:00 pm)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 data-mobile d-none">
+                        <div class="location">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>شارع الحر- عمارات الحي- طرابلس-تركيا</span>
+                        </div>
+                        <div class="time">
+                          <i class="fas fa-clock"></i>
+                          <span>مده الانتظار : 30:00 دقيقه</span>
+                        </div>
+                        <div class="wallet">
+                          <i class="fas fa-wallet"></i>
+                          <span>سعر الكشف : 100 ليرة</span>
+                        </div>
+                        <div class="stopwatch">
+                          <i class="fas fa-stopwatch"></i>
+                          <span>مواعيد العمل السبت-الخميس (10:00 am - 5:00 pm)</span>
+                        </div>
+                      </div>
+                      <div class="col-3 div_reservation_doctor_btn p-0">
+                        <button class="btn reservation_doctor-btn">حجز الطبيب</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- ============= card hospital ============= -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =========== ? reservation_doctor =========== -->
+
+  <!-- ============ layout list & grid ============ -->
+  <script>
+    $(document).ready(function () {
+      $('#list').click(function (event) {
+        event.preventDefault();
+        $('#posts .item').removeClass('col-4').addClass('col-12 p-0');
+        $('#posts .item .des-hospital').removeClass('col-lg-8 col-md-8').addClass('col-lg-5 col-md-8');
+        $('#posts img').removeClass('h-100').addClass('h-100');
+        $('#grid').removeClass('active');
+        $('#list').addClass('active');
+        $('#posts .listbtn').removeClass('d-none').addClass('d-block');
+        $('.div_reservation_doctor_btn').removeClass('col-12').addClass('col-3');
+        $('.data-mobile').removeClass('d-block').addClass('d-none');
+        $('.data-laptop').removeClass('d-none').addClass('d-block');
+      });
+
+      $('#grid').click(function (event) {
+        event.preventDefault();
+        $('#posts .item').removeClass('col-12 p-0').addClass('col-4');
+        $('#posts .item .des-hospital').removeClass('col-lg-5 col-md-8').addClass('col-lg-8 col-md-8');
+        $('#posts img').removeClass('h-100').addClass('h-100');
+        $('#list').removeClass('active');
+        $('#grid').addClass('active');
+        $('#posts .listbtn').removeClass('d-block').addClass('d-none');
+        $('.div_reservation_doctor_btn').removeClass('col-3').addClass('col-12');
+        $('.data-mobile').removeClass('d-none').addClass('d-block');
+        $('.data-laptop').removeClass('d-block').addClass('d-none');
+      });
+    });
+  </script>
+  <!-- ============ layout list & grid ============ -->
+
+  <!-- ? ======= footer =========== -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+          <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+          <ul class="socialicon mt-2">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram icon"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+            href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">لينكات سريعه</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+            <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+              <ul>
+                <li> <a class="hvr-float-shadow" href="../basic/terms.html">شروط الاستخدام</a></li>
+                <li> <a class="hvr-float-shadow" href="../basic/privacy.html">سياسه الخصوصيه</a></li>
+                <li> <a class="hvr-float-shadow" href="../basic/about.html">من نحن</a></li>
+                <li> <a class="hvr-float-shadow" href="../basic/contact.html">اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">إحجز عن طريق</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+            <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+              <ul>
+                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">الكادر الطبي</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+            <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+              <ul>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">متوفر علي</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+            <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+              <ul>
+                <a href="#">
+                  <li class="hvr-icon-buzz-out"> <img class="hvr-icon" src="../../media/image/icon/google-play.png"
+                      alt="phone-icon" /></li>
+                </a>
+                <a href="#">
+                  <li class="hvr-icon-buzz-out"> <img class="hvr-icon" src="../../media/image/icon/apple-store.png"
+                      alt="mail-icon" /></li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="item col-sm-12">
+              <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ? ======= footer =========== -->
+  
+  <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ? Required meta tags -->
+
+    <!-- Standard css -->
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <!-- Standard css -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/hover-min.css" />
+    <!-- custom css -->
+
+    <!-- ? Standard JavaScript -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <!-- ? Standard JavaScript -->
+
+    <!-- custom JavaScript -->
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <!-- custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Shifa</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/logo.svg" type="image">
+    <!-- ? Favicon -->
+
+    <script>
+        console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+    </script>
+    <!-- ? JavaScript -->
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- =========== ? NavBar =========== -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <div class="first-nav">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a data-toggle="modal" data-target="#medical_staff">الكادر الطبي</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </div>
+            <div class="second-nav">
+                <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop js-toggle-cart"></a></li>
+                <!--begin::Languages-->
+                <div class="dropdown">
+                    <!--begin::Toggle-->
+                    <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                        <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+                            <span class="symbol symbol-20 mr-3">
+                                <img src="../../media/image/ar.svg" alt="lang">
+                            </span>
+                            <span class="navi-text">العربية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end::Toggle-->
+                    <!--begin::Dropdown-->
+                    <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="navi navi-hover py-3 pr-0">
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/ar.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">العربية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/en.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">الانجليزية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/tr.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">التركية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Dropdown-->
+                </div>
+                <!--end::Languages-->
+                <li>
+                    <div class="dropdown dropdownlogin">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../../media/image/hospital/doctor.jpg" alt=""> أحمد حوام
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">صفحتك</button>
+                            <button class="dropdown-item" type="button">تسجيل خروج</button>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li><button class="login-button" onclick="window.open('login.html', '_self')">تسجيل الدخول</button>
+                </li> -->
+            </div>
+        </ul>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+
+    <!-- =========== ? About =========== -->
+    <section class="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-about">
+                        <h2>من نحن</h2>
+                        <p>
+                            شفاء هي المنصة الرائدة للرعاية الصحية الإلكترونية لحجز الأطباء و برنامج تنظيم إدارة العيادات
+                            في
+                            منطقة الشرق الأوسط و شمال إفريقيا. نحن نقود تحويل حجز الأطباء و العيادات و المستشفيات
+                            إلكترونيتا
+                            وأوتوماتيكيا لتصبح الرعاية الصحية عالية الجودة سهلة المنال في المنطقة العربية.
+
+                            بمساعدة أكثر من200,000 تقييم مُثبت و مُراجَع، يمكن للمريض أن يبحث، يقارن، و يحجز مع أفضل
+                            الأطباء
+                            في الحال. و يمكن أيضاً للأطباء أن يوفروا تجربة رعاية صحية سهلة و بدون عقبات بفضل برنامج
+                            تنظيم
+                            إدارة العيادات من فيزيتا.
+                        </p>
+                        <a class="btn hvr-bob" a href='contact.html'>اتصل بنا</a>
+                        <div class="happy">
+                            <img src="../../media/image/icon/heart.svg" alt="heart">
+                            <h5>أكثر من 10 الاف عميل</h5>
+                            <p>سعيد بالتعامل مع شفاء</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 p-0">
+                    <img src="../../media/image/about/about.jpg" alt="about">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? About =========== -->
+
+    <!-- =========== ? Shifa team =========== -->
+    <section class="team">
+        <div class="container">
+            <h2>فريق شفاء</h2>
+            <div class="row">
+                <!-- =========== card reservation =========== -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../media/image/home/team1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">فريق الاطباء</h5>
+                            <p class="card-text">يمكنك أختيار طبيب أو ممرض , كما يمكن حجز التخصص من داخل مركز طبي</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========== card reservation =========== -->
+
+                <!-- =========== card reservation =========== -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../media/image/home/team2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">فريق التمريض</h5>
+                            <p class="card-text">يمكنك أختيار طبيب أو ممرض , كما يمكن حجز التخصص من داخل مركز طبي</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========== card reservation =========== -->
+
+                <!-- =========== card reservation =========== -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../media/image/home/team3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">فريق المركز الطبي</h5>
+                            <p class="card-text">يمكنك أختيار طبيب أو ممرض , كما يمكن حجز التخصص من داخل مركز طبي</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========== card reservation =========== -->
+
+                <!-- =========== card reservation =========== -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../media/image/home/team4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">فريق الصيدليه</h5>
+                            <p class="card-text">يمكنك أختيار طبيب أو ممرض , كما يمكن حجز التخصص من داخل مركز طبي</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========== card reservation =========== -->
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? Shifa team =========== -->
+
+    <!-- =========== ? start reservation =========== -->
+    <section class="start-reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-start-reservation">
+                    <h4>ابدأ الان مع خدمات شفاء الطبيه</h4>
+                    <p>دلوقتي تقدر تحجز طبيبك بالوقت الا يناسبك ولا داعى للانتظار</p>
+                </div>
+                <div class="col-sm-6">
+                    <a class="btn hvr-bob"
+                        href='../doctor/Doctor General Specialty.html'>احجز الان</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? start reservation =========== -->
+
+    <!-- =========== ? Said Patient =========== -->
+    <section class="said-patient">
+        <div class="container">
+            <h2>ما يقوله المرضى عنا</h2>
+            <div class="row">
+                <!-- Swiper -->
+                <div class="swiper-container said-patient-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="said-card">
+                                <div class="row">
+                                    <img src="../../media/image/home/7w7w.jpg" alt="patient" class="person">
+                                    <div class="des-patient">
+                                        <h6>أحمد حوام</h6>
+                                        <p>تركيا</p>
+                                    </div>
+                                    <img src="../../media/image/icon/quote.svg" alt="quote" class="quote">
+                                </div>
+                                <p>دكتور شاطر جدا جدا ومحترم وسعدت بالتعامل معه
+                                    والتطبيق مفيد جدا واستفادت منه كتير وخدماته
+                                    ممتازه وانصح الكل باستخدامه</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="said-card">
+                                <div class="row">
+                                    <img src="../../media/image/home/7w7w.jpg" alt="patient" class="person">
+                                    <div class="des-patient">
+                                        <h6>أحمد حوام</h6>
+                                        <p>تركيا</p>
+                                    </div>
+                                    <img src="../../media/image/icon/quote.svg" alt="quote" class="quote">
+                                </div>
+                                <p>دكتور شاطر جدا جدا ومحترم وسعدت بالتعامل معه
+                                    والتطبيق مفيد جدا واستفادت منه كتير وخدماته
+                                    ممتازه وانصح الكل باستخدامه</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="said-card">
+                                <div class="row">
+                                    <img src="../../media/image/home/7w7w.jpg" alt="patient" class="person">
+                                    <div class="des-patient">
+                                        <h6>أحمد حوام</h6>
+                                        <p>تركيا</p>
+                                    </div>
+                                    <img src="../../media/image/icon/quote.svg" alt="quote" class="quote">
+                                </div>
+                                <p>دكتور شاطر جدا جدا ومحترم وسعدت بالتعامل معه
+                                    والتطبيق مفيد جدا واستفادت منه كتير وخدماته
+                                    ممتازه وانصح الكل باستخدامه</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="said-card">
+                                <div class="row">
+                                    <img src="../../media/image/home/7w7w.jpg" alt="patient" class="person">
+                                    <div class="des-patient">
+                                        <h6>أحمد حوام</h6>
+                                        <p>تركيا</p>
+                                    </div>
+                                    <img src="../../media/image/icon/quote.svg" alt="quote" class="quote">
+                                </div>
+                                <p>دكتور شاطر جدا جدا ومحترم وسعدت بالتعامل معه
+                                    والتطبيق مفيد جدا واستفادت منه كتير وخدماته
+                                    ممتازه وانصح الكل باستخدامه</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="said-card">
+                                <div class="row">
+                                    <img src="../../media/image/home/7w7w.jpg" alt="patient" class="person">
+                                    <div class="des-patient">
+                                        <h6>أحمد حوام</h6>
+                                        <p>تركيا</p>
+                                    </div>
+                                    <img src="../../media/image/icon/quote.svg" alt="quote" class="quote">
+                                </div>
+                                <p>دكتور شاطر جدا جدا ومحترم وسعدت بالتعامل معه
+                                    والتطبيق مفيد جدا واستفادت منه كتير وخدماته
+                                    ممتازه وانصح الكل باستخدامه</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="said-card">
+                                <div class="row">
+                                    <img src="../../media/image/home/7w7w.jpg" alt="patient" class="person">
+                                    <div class="des-patient">
+                                        <h6>أحمد حوام</h6>
+                                        <p>تركيا</p>
+                                    </div>
+                                    <img src="../../media/image/icon/quote.svg" alt="quote" class="quote">
+                                </div>
+                                <p>دكتور شاطر جدا جدا ومحترم وسعدت بالتعامل معه
+                                    والتطبيق مفيد جدا واستفادت منه كتير وخدماته
+                                    ممتازه وانصح الكل باستخدامه</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        // ============== said patient slider ==============
+        var swiper = new Swiper(".said-patient-slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            breakpoints: {
+                480: {
+                    slidesPerView: 1,
+                    noSwiping: true,
+                    allowSlidePrev: true,
+                    allowSlideNext: true
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    noSwiping: true,
+                    allowSlidePrev: true,
+                    allowSlideNext: true
+                },
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+// ============== said patient slider ==============
+    </script>
+    <!-- =========== ? Said Patient =========== -->
+
+
+
+
+    <!-- ==================== section shopping cart ==================== -->
+    <aside class="cart js-cart">
+        <div class="cart__header">
+            <h1 class="cart__title">بطاقه التسوق</h1>
+            <p class="cart__text">
+                <a class="button button--light js-toggle-cart" href="#" title="Close cart">
+                    <i class="fas fa-times mx-1"></i> اغلاق
+                </a>
+            </p>
+        </div>
+        <div class="cart__products js-cart-products">
+            <h6>عدد المنتجات</h6>
+            <span>3 منتج</span>
+            <!-- ======== Append product ======== -->
+            <div class="item">
+
+            </div>
+            <!-- ======== Append product ======== -->
+            <div class="cart__empty js-cart-empty">
+                <img src="../../media/image/image-pharamcy/shopping-cart.svg" alt="shopping-cart">
+                <button class="btn">تسوق الان</button>
+            </div>
+            <div class="cart__product js-cart-product-template">
+                <article class="js-cart-product">
+                    <div class="row">
+                        <div class="col-lg-2 px-2">
+                            <img src="../../media/image/image-pharamcy/med1.JPG" alt="">
+                        </div>
+                        <div class="col-lg-7">
+                            <p>بانادول أكسترا , 50 مجم / 500 مجم</p>
+                            <span>لعلاج أمراض البرد والانفلونزا</span>
+                            <p class="mt-2">
+                                <a class="edit-product" href="#" title="edit product">
+                                    <i class="fas fa-pen"></i> تعديل
+                                </a>
+                                <a class="js-remove-product" href="#" title="Delete product">
+                                    <i class="far fa-trash-alt"></i> مسح
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="number" value="1" min="1">
+                            <p class="price">100 ليرة</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="cart__footer" onclick="window.open('#', '_self')">
+            <span class="price" title="Buy products">
+                100 ليرة
+            </span>
+            <span class="continue">استكمال عمليه الشراء</span>
+        </div>
+    </aside>
+    <div class="lightbox js-lightbox js-toggle-cart"></div>
+
+    <!-- ========== script shopping cart ========== -->
+    <script>
+        var cartOpen = false;
+        var numberOfProducts = 0;
+
+        $('body').on('click', '.js-toggle-cart', toggleCart);
+        $('body').on('click', '.js-add-product', addProduct);
+        $('body').on('click', '.js-remove-product', removeProduct);
+
+        function toggleCart(e) {
+            e.preventDefault();
+            if (cartOpen) {
+                closeCart();
+                return;
+            }
+            openCart();
+        }
+
+        function openCart() {
+            cartOpen = true;
+            $('body').addClass('open');
+        }
+
+        function closeCart() {
+            cartOpen = false;
+            $('body').removeClass('open');
+        }
+
+        function addProduct(e) {
+            e.preventDefault();
+            openCart();
+            $('.js-cart-empty').addClass('hide');
+            var product = $('.js-cart-product-template').html();
+            $('.js-cart-products .item').prepend(product);
+            numberOfProducts++;
+        }
+        // 
+        function removeProduct(e) {
+            e.preventDefault();
+            numberOfProducts--;
+            $(this).closest('.js-cart-product').hide(250);
+            if (numberOfProducts == 0) {
+                $('.js-cart-empty').removeClass('hide');
+            }
+        }
+    </script>
+    <!-- ========== script shopping cart ========== -->
+
+    <!-- ==================== section shopping cart ==================== -->
+
+
+    <!-- ? ======= footer =========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+                    <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+                    <ul class="socialicon mt-2">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+                        href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">لينكات سريعه</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+                        <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="terms.html">شروط الاستخدام</a></li>
+                                <li> <a class="hvr-float-shadow" href="privacy.html">سياسه الخصوصيه</a></li>
+                                <li> <a class="hvr-float-shadow" href="about.html">من نحن</a></li>
+                                <li> <a class="hvr-float-shadow" href="contact.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">إحجز عن طريق</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+                        <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">الكادر الطبي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+                        <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">متوفر علي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+                        <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+                            <ul>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/google-play.png" alt="phone-icon" /></li>
+                                </a>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/apple-store.png" alt="mail-icon" /></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12">
+                            <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ? ======= footer =========== -->
+
+    <!-- ======= Modal medical staff ======= -->
+    <div class="modal medical_staff_modal fade" id="medical_staff" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">الكادر الطبي</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="../doctor/Doctor General Specialty.html">
+                                <img src="../../media/image/icon/doctor.svg" alt="doctor">
+                                <h6>طبيب</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="../nursing/Nursing-HealthCare-Service.html">
+                                <img src="../../media/image/icon/nursing.svg" alt="nursing">
+                                <h6>ممرض</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="../pharmcy/type pharamcy.html">
+                                <img src="../../media/image/icon/pharmacyy.svg" alt="pharmacy">
+                                <h6>صيدليه</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="../hospital/search_hospital.html">
+                                <img src="../../media/image/icon/medical-center.svg" alt="medical-center">
+                                <h6>مركز طبي</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= Modal medical staff ======= -->
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

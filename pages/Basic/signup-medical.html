@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8">
+    <!-- ? Required meta tags -->
+
+    <!-- Standard css -->
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <!-- Standard css -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../css/hover-min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap-select.min.css" />
+    <!-- custom css -->
+
+    <!-- ? Standard JavaScript -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <!-- ? Standard JavaScript -->
+
+    <!-- custom JavaScript -->
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Shifa</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/logo.svg" type="image">
+    <!-- ? Favicon -->
+
+    <script>
+        console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+    </script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- =========== ? NavBar =========== -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <div class="first-nav">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="signup-medical.html">الكادر الطبي</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </div>
+            <div class="second-nav">
+                <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+                <!--begin::Languages-->
+                <div class="dropdown">
+                    <!--begin::Toggle-->
+                    <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                        <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+                            <span class="symbol symbol-20 mr-3">
+                                <img src="../../media/image/ar.svg" alt="lang">
+                            </span>
+                            <span class="navi-text">العربية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end::Toggle-->
+                    <!--begin::Dropdown-->
+                    <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="navi navi-hover py-3 pr-0">
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/ar.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">العربية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/en.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">الانجليزية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="navi-item">
+                                <a href="#" class="navi-link">
+                                    <span class="symbol symbol-20 mr-3">
+                                        <img src="../../media/image/tr.svg" alt="lang">
+                                    </span>
+                                    <span class="navi-text">التركية</span>
+                                </a>
+                            </li>
+                            <!--end::Item-->
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Dropdown-->
+                </div>
+                <!--end::Languages-->
+                <li><button class="login-button" onclick="window.open('login.html', '_self')">تسجيل الدخول</button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+
+
+    <section class="signup">
+        <div class="container">
+            <div class="row">
+                <form enctype="multipart/form-data" action="signup3-email.html" method="GET" class="avatar-upload">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-animated" role="progressbar" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div> <br>
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row radio-medical">
+                                <h4>أنا</h4>
+                                <div class="radiobuttons">
+                                    <div class="rdio rdio-primary radio-inline"> <input name="radio" value="1"
+                                            id="radio1" type="radio" checked>
+                                        <label for="radio1">طبيب</label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline">
+                                        <input name="radio" value="2" id="radio2" type="radio">
+                                        <label for="radio2">ممرض</label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline">
+                                        <input name="radio" value="3" id="radio3" type="radio">
+                                        <label for="radio3">مستشفي</label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline">
+                                        <input name="radio" value="4" id="radio4" type="radio">
+                                        <label for="radio4">صيدلية</label>
+                                    </div>
+                                </div>
+                                <h4>إنشاء حساب جديد الان</h4>
+                                <p>يمكنك إنشاء حساب جديد بإستخدام فيسبوك او جوجل</p>
+                                <div class="socialbtn">
+                                    <button class="btn hvr-bob" onclick="window.open('#', '_self')">فيسبوك <i
+                                            class="fab fa-facebook-f"></i></button>
+                                    <button class="btn hvr-bob" onclick="window.open('#', '_self')">جوجل <i
+                                            class="fab fa-google"></i></button>
+                                </div>
+                                <p class="or">أو</p>
+                            </div>
+                        </div>
+                        <button type="button" name="next" class="btn hvr-bob sign-email next action-button">سجل باستخدام
+                            الايميل</button>
+                        <p class="already-login">مسجل بالفعل فى شفاء ؟ <a href="login.html"> تسجيل الدخول</a></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <a type="button" name="previous" class="previous action-button-previous h4" value="Previous"><i
+                                class="fas fa-arrow-right"></i> التسجيل باستخدام البريد
+                            الالكتروني</a>
+                        <div class="form-card">
+                            <div class="radio-medical">
+                                <p>من فضلك قم بملىء جميع البيانات الشخصيه التاليه </p>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 imageupl">
+                                        <!-- ============= Upload image ============= -->
+                                        <div class="avatar-edit">
+                                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" name="avatar"
+                                                class="{{ $errors->has('email') ? 'alert alert-danger' : '' }}" />
+                                            <label for="imageUpload"></label>
+                                        </div>
+                                        <div class="avatar-preview container2">
+                                            <div id="imagePreview">
+                                                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                            </div>
+                                        </div>
+                                        <!-- ============= Upload image ============= -->
+                                    </div>
+                                    <div class="col-lg-9 col-md-12">
+                                        <div class="form-group">
+                                            <label for="name">الاسم</label>
+                                            <input type="text" name="name" id="name" placeholder="الاسم"
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mobile">رقم الهاتف</label>
+                                            <input type="text" name="mobile" id="mobile" placeholder="رقم الهاتف"
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">البريد الالكتروني</label>
+                                            <input type="email" name="email" id="email" placeholder="البريد الالكتروني"
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="specialty">التخصص</label>
+                                            <select name="specialty" id="specialty" class="form-control">
+                                                <option value="0" hidden selected>التخصص</option>
+                                                <option value="1">test</option>
+                                                <option value="2">test</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">كلمه المرور</label>
+                                            <input type="password" name="password" id="txtPassword"
+                                                placeholder="كلمه المرور" class="form-control">
+                                            <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon"
+                                                    class="fas fa-eye-slash"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" name="next" class="btn signbtn hvr-bob next action-button">إنشاء حساب
+                            جديد</button>
+                    </fieldset>
+
+                    <fieldset class="signup2">
+                        <a type="button" name="previous" class="previous action-button-previous h4" value="Previous"><i
+                                class="fas fa-arrow-right"></i>البيانات العامه</a>
+                        <div class="form-card">
+                            <div class="radio-medical">
+                                <!-- <h4><a href="signup-email.html"><i class="fas fa-arrow-right"></i></a>البيانات العامه -->
+                                </h4>
+                                <p>من فضلك ادخل صوره لملفك الشخصى واسما للظهور للمرضي</p>
+                                <div class="row">
+                                    <div class="col-sm-12 imageupl2">
+                                        <div class="avatar-preview container2">
+                                            <div id="imagePreview">
+                                                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12 mx-auto">
+                                        <div class="form-group">
+                                            <label for="">الاسم المراد الظهور به</label>
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                placeholder="الاسم كاملا">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" name="next" class="btn signbtn hvr-bob next action-button"> إستمرار
+                            التسجيل
+                        </button>
+                    </fieldset>
+
+                    <fieldset class="signup2">
+                        <a type="button" name="previous" class="previous action-button-previous h4" value="Previous"><i
+                                class="fas fa-arrow-right"></i>بيانات العمل</a>
+                        <div class="form-card">
+                            <div class="radio-medical">
+                                <p>والان اشترك في حجوزات شفاء الان لبناء حساب قوي ويصلك من خلاله العديد من الحجوزات</p>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 mx-auto">
+                                        <div class="card">
+                                            <img class="card-img-top" src="../../media/image/home/subscribe.jpg"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <p class="card-text">قم بتفعيل زر الاشتراك الان ! واحصل على حجوزات كبيره
+                                                    من خلال حساب قوي</p>
+                                                <button type="button" name="next"
+                                                    class="btn subscribe hvr-bob next action-button">
+                                                    إشترك الان
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="signup3">
+                        <a type="button" name="previous" class="previous action-button-previous h4" value="Previous"><i
+                                class="fas fa-arrow-right"></i>اضافه أماكن العمل</a>
+                        <div class="form-card">
+                            <div class="radio-medical">
+                                <p>قم بملىء البيانات التاليه الان واضافه أماكن العمل الخاصه بك وتفاصيل الحجز</p>
+                                <div class="row work-place" id="work-place">
+                                    <div class="col-sm-6">
+                                        <h4>أماكن العمل</h4>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h6 class="work-place-btn" id="work-place-btn">+ اضافه عياده او مركز</h6>
+                                    </div>
+                                    <input type="text" name="name-hospital" id="name-hospital" class="form-control"
+                                        placeholder="اسم العياده او المركز أو الصيدليه">
+                                    <input type="text" name="name-hospital" id="name-hospital"
+                                        class="form-control place" placeholder="أدخل العنوان">
+                                    <input type="text" name="name-hospital" id="name-hospital"
+                                        class="form-control number" placeholder="رقم الهاتف">
+                                </div>
+                                <div class="row details-detection">
+                                    <div class="col-sm-6">
+                                        <h4>تفاصيل الكشف</h4>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h6 class="details-detection-btn">+ اضافه خدمه كشف</h6>
+                                    </div>
+                                    <select name="detection" id="detection" class="form-control selectpicker" title="نوع الكشف">
+                                        <option value="1">تيست</option>
+                                        <option value="2">تيست</option>
+                                    </select>
+                                    <input type="text" name="name-hospital" id="name-hospital"
+                                        class="form-control place" placeholder="مده الانتظار">
+                                    <input type="text" name="name-hospital" id="name-hospital"
+                                        class="form-control number" placeholder="سعر الكشف">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" name="next" class="btn hvr-bob next action-button">
+                            إستمرار التسجيل
+                        </button>
+                        <script>
+                            // ============= Duplicate section to details-detection & work-place
+    
+                            $("#work-place-btn").click(function () {
+                                $('#work-place').after('<div class="row work-place" id="work-place"><div class="col-sm-6"><h4>أماكن العمل</h4></div><div class="col-sm-6"><h6 class="remove-btn-work-place" data-toggle="tooltip" data-placement="top" title="Delete">حذف</h6></div> <input type="text" name="name-hospital" id="name-hospital" class="form-control" placeholder="اسم العياده او المركز أو الصيدليه"> <input type="text" name="name-hospital" id="name-hospital" class="form-control place" placeholder="أدخل العنوان"> <input type="text" name="name-hospital" id="name-hospital" class="form-control number" placeholder="رقم الهاتف"></div>');
+                            });
+                            
+                            $(".radio-medical").on("click", ".remove-btn-work-place", function (e) {
+                                $(this).parents('.work-place').remove();
+                            });
+    
+    
+                            $(".details-detection-btn").click(function () {
+                                $('.details-detection').after('<div class="row details-detection"><div class="col-sm-6"><h4>تفاصيل الكشف</h4></div><div class="col-sm-6"><h6 class="remove-btn-details-detection" data-toggle="tooltip" data-placement="top" title="Delete">حذف</h6></div> <select name="detection" id="detection" class="form-control selectpicker" title="نوع الكشف"><option value="1">تيست</option><option value="2">تيست</option> </select> <input type="text" name="name-hospital" id="name-hospital" class="form-control place" placeholder="مده الانتظار"> <input type="text" name="name-hospital" id="name-hospital" class="form-control number" placeholder="سعر الكشف"></div>');
+                                $('.selectpicker').selectpicker('render');
+                            });
+    
+                            $(".radio-medical").on("click", ".remove-btn-details-detection", function (e) {
+                                $(this).parents('.details-detection').remove();
+                            });
+    
+                            // ============= Duplicate section to details-detection & work-place
+                        </script>
+                    </fieldset>
+
+                    <fieldset>
+                        <a type="button" name="previous" class="previous action-button-previous h4" value="Previous"><i
+                                class="fas fa-arrow-right"></i>باقات الدفع</a>
+                        <div class="form-card">
+                            <div class="row radio-medical">
+                                <p>من فضلك أختر باقه الدفع المناسبه لك لاستكمال طلب الاشتراك في حجوزات شفاء</p>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="package">
+                                        <h4>الباقه البرونزيه</h4>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</p>
+                                        <hr>
+                                        <ol>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                        </ol>
+                                        <span>
+                                            <h3> 1000 ليرة </h3> للشهر
+                                        </span>
+                                        <button type="button" name="next" class="btn hvr-bob next action-button">
+                                            أختر الباقه
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="package">
+                                        <h4>الباقه الفضيه</h4>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</p>
+                                        <hr>
+                                        <ol>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                        </ol>
+                                        <span>
+                                            <h3> 1000 ليرة </h3> للشهر
+                                        </span>
+                                        <button type="button" name="next" class="btn hvr-bob next action-button">
+                                            أختر الباقه
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="package">
+                                        <h4>الباقه الذهبيه</h4>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</p>
+                                        <hr>
+                                        <ol>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                            <li>هذا مثال لميزه الباقه</li>
+                                        </ol>
+                                        <span>
+                                            <h3> 1000 ليرة </h3> للشهر
+                                        </span>
+                                        <button type="button" name="next" class="btn hvr-bob next action-button">
+                                            أختر الباقه
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <a type="button" name="previous" class="previous action-button-previous h4" value="Previous"><i
+                                class="fas fa-arrow-right"></i>باقات الدفع</a>
+                        <div class="form-card radio-medical">
+                            <div class="payment">
+                                <p>من فضلك أختر باقه الدفع المناسبه لك لاستكمال طلب الاشتراك في حجوزات شفاء</p>
+                                <div class="row">
+                                    <div class="col-sm-4 text-center">
+                                        <label>
+                                            <input type="radio" name="payment" value="visa" checked>
+                                            <img class="visa">
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <label>
+                                            <input type="radio" name="payment" value="master">
+                                            <img class="master">
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <label>
+                                            <input type="radio" name="payment" value="paypal">
+                                            <img class="paypal">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h4 class="px-3">بيانات الدفع</h4>
+                                    <div class="col-sm-12">
+                                        <input type="text" name="name-person" id="name-person" class="form-control"
+                                            placeholder="اسم حامل البطاقه">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input type="text" name="number-person" maxlength="14" id="number-person"
+                                            class="form-control" placeholder="رقم البطاقه">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder="تاريخ الانتهاء" name="date" id="date"
+                                            onfocus="(this.type='date')" class="form-control">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="cvv" maxlength="3" id="cvv" class="form-control"
+                                            placeholder="CVV">
+                                    </div>
+                                </div>
+                                <!-- <a href="success-signup.html" class="btn hvr-bob">دفع</a> -->
+                                <button type="button" name="next" class="btn hvr-bob next action-button">
+                                    دفع
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="success">
+                            <img src="../../media/image/icon/success.svg" alt="success">
+                            <h3>تهانينا ! لقد أتممت عمليه التسجيل بنجاح</h3>
+                        </div>
+                        <a href="user-profile.html" class="user-profile">
+                            <img src="../../media/image/icon/user.svg" alt="user">
+                            <span>الملف الشخصى</span>
+                        </a>
+                    </fieldset>
+                </form>
+
+                <!-- =========== show password =========== -->
+                <script>
+
+                    let passwordInput = document.getElementById('txtPassword'),
+                        toggle = document.getElementById('btnToggle'),
+                        icon = document.getElementById('eyeIcon');
+
+                    function togglePassword() {
+                        if (passwordInput.type === 'password') {
+                            passwordInput.type = 'text';
+                            icon.classList.add("fa-eye");
+                            toggle.innerHTML = '<i class="fa fa-eye"></i>';
+                        } else {
+                            passwordInput.type = 'password';
+                            icon.classList.remove("fa-eye-slash");
+                            toggle.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                        }
+                    }
+
+                    function checkInput() {
+                        //if (passwordInput.value === '') {
+                        //toggle.style.display = 'none';
+                        //toggle.innerHTML = 'show';
+                        //  passwordInput.type = 'password';
+                        //} else {
+                        //  toggle.style.display = 'block';
+                        //}
+                    }
+
+                    toggle.addEventListener('click', togglePassword, false);
+                    passwordInput.addEventListener('keyup', checkInput, false);
+                </script>
+                <!-- =========== show password =========== -->
+
+            </div>
+        </div>
+    </section>
+    <script>
+        //============= Form wizard medical form =============
+        $(document).ready(function () {
+
+            var current_fs, next_fs, previous_fs; //fieldsets
+            var opacity;
+            var current = 1;
+            var steps = $("fieldset").length;
+
+            setProgressBar(current);
+
+            $(".next").click(function () {
+
+                current_fs = $(this).closest("fieldset");
+                next_fs = $(this).closest("fieldset").next();
+
+                //Add Class Active
+                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                //show the next fieldset
+                next_fs.show();
+                //hide the current fieldset with style
+                current_fs.animate({ opacity: 0 }, {
+                    step: function (now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({ 'opacity': opacity });
+                    },
+                    duration: 500
+                });
+                setProgressBar(++current);
+            });
+
+            $(".previous").click(function () {
+
+                current_fs = $(this).parent();
+                previous_fs = $(this).parent().prev();
+
+                //Remove class active
+                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                //show the previous fieldset
+                previous_fs.show();
+
+                //hide the current fieldset with style
+                current_fs.animate({ opacity: 0 }, {
+                    step: function (now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        previous_fs.css({ 'opacity': opacity });
+                    },
+                    duration: 500
+                });
+                setProgressBar(--current);
+            });
+
+            function setProgressBar(curStep) {
+                var percent = parseFloat(100 / steps) * curStep;
+                percent = percent.toFixed();
+                $(".progress-bar")
+                    .css("width", percent + "%")
+            }
+
+            $(".submit").click(function () {
+                return false;
+            })
+
+        });
+
+//============= Form wizard medical form =============
+    </script>
+
+    <!-- ? ======= footer =========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+                    <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+                    <ul class="socialicon mt-2">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;">
+                    <a href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">لينكات سريعه</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+                        <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="terms.html">شروط الاستخدام</a></li>
+                                <li> <a class="hvr-float-shadow" href="privacy.html">سياسه الخصوصيه</a></li>
+                                <li> <a class="hvr-float-shadow" href="about.html">من نحن</a></li>
+                                <li> <a class="hvr-float-shadow" href="contact.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">إحجز عن طريق</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+                        <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">الكادر الطبي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+                        <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+                            <ul>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+                        data-toggle="collapse">متوفر علي</a>
+                    <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+                        <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+                        <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+                            <ul>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/google-play.png" alt="phone-icon" /></li>
+                                </a>
+                                <a href="#">
+                                    <li class="hvr-icon-buzz-out"> <img class="hvr-icon"
+                                            src="../../media/image/icon/apple-store.png" alt="mail-icon" /></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12">
+                            <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

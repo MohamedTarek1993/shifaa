@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- ? Required meta tags -->
+  <meta charset="utf-8">
+  <!-- ? Required meta tags -->
+
+  <!-- Standard css -->
+  <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+  <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <!-- Standard css -->
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="../../css/hover-min.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.min.css" />
+  <!-- custom css -->
+
+  <!-- ? Standard JavaScript -->
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/all.min.js"></script>
+  <!-- ? Standard JavaScript -->
+
+  <!-- custom JavaScript -->
+  <script src="../../js/bootstrap-select.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <!-- custom JavaScript -->
+
+  <!-- ? Title -->
+  <title>Shifa</title>
+  <!-- ? Title -->
+
+  <!-- ? Favicon -->
+  <link rel="icon" href="../../media/image/logo.svg" type="image">
+  <!-- ? Favicon -->
+
+  <script>
+    console.log('%c <== 7w7w++ ==>  ', "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;");
+  </script>
+  <!-- ? JavaScript -->
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+  <!-- =========== ? NavBar =========== -->
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="../../media/image/logo.svg" alt="Logo Image"></a>
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <div class="first-nav">
+        <li><a href="../Basic/index.html">الرئيسية</a></li>
+        <li><a href="../Basic/about.html">من نحن</a></li>
+        <li><a href="../Basic/signup-medical.html">الكادر الطبي</a></li>
+        <li><a href="../Basic/contact.html">اتصل بنا</a></li>
+      </div>
+      <div class="second-nav">
+        <li><a><img src="../../media/image/shop.svg" alt="shop" class="shop"></a></li>
+        <!--begin::Languages-->
+        <div class="dropdown">
+          <!--begin::Toggle-->
+          <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+            <div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+              <span class="symbol symbol-20 mr-3">
+                <img src="../../media/image/ar.svg" alt="lang">
+              </span>
+              <span class="navi-text">العربية</span>
+              </a>
+            </div>
+          </div>
+          <!--end::Toggle-->
+          <!--begin::Dropdown-->
+          <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+            <!--begin::Nav-->
+            <ul class="navi navi-hover py-3 pr-0">
+              <!--begin::Item-->
+              <li class="navi-item">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="../../media/image/ar.svg" alt="lang">
+                  </span>
+                  <span class="navi-text">العربية</span>
+                </a>
+              </li>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <li class="navi-item">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="../../media/image/en.svg" alt="lang">
+                  </span>
+                  <span class="navi-text">الانجليزية</span>
+                </a>
+              </li>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <li class="navi-item">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="../../media/image/tr.svg" alt="lang">
+                  </span>
+                  <span class="navi-text">التركية</span>
+                </a>
+              </li>
+              <!--end::Item-->
+            </ul>
+            <!--end::Nav-->
+          </div>
+          <!--end::Dropdown-->
+        </div>
+        <!--end::Languages-->
+        <li><button class="login-button" onclick="window.open('../Basic/login.html', '_self')">تسجيل الدخول</button>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <!-- =========== ? NavBar =========== -->
+
+  <section class="hospital-personal-data">
+    <div class="hospital-personal">
+      <div class="container">
+        <!-- start row -->
+        <div class="row">
+          <!-- start nav tab  -->
+          <div class="col-lg-3 col-lg-3 col-md-12">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                aria-controls="v-pills-home" aria-selected="true">
+                بياناتي الشخصيه</a>
+              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                aria-controls="v-pills-profile" aria-selected="false"> بيانات العمل</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                aria-controls="v-pills-messages" aria-selected="false">
+                المواعيد المتاحه</a>
+              <a class="nav-link" id="v-pills-location-tab" data-toggle="pill" href="#v-pills-location" role="tab"
+                aria-controls="v-pills-messages" aria-selected="false">
+                موقعي</a>
+            </div>
+          </div>
+          <!-- finish nav tab  -->
+          <!-- start nav content -->
+          <div class="col-lg-9 col-lg-9 col-md-12">
+            <div class="tab-content" id="v-pills-tabContent">
+              <!-- start first content -->
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab">
+                <div class="personal">
+                  <div class="avatar-upload">
+                    <div class="avatar-edit">
+                      <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
+                      <label for="imageUpload"></label>
+                    </div>
+                    <div class="avatar-preview">
+                      <div id="imagePreview" style="
+                            background-image: url(../../media/image/image-doctor/un.pngkown.png);
+                          "></div>
+                    </div>
+                  </div>
+
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputtext">اسم المستشفي </label>
+                      <input type="text" class="form-control" placeholder="اكتب اسم اسم المستشفي" />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputtext">التخصص </label>
+                      <input type="text" class="form-control" placeholder="اكتب اسم التخصص" />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputtext">الدرجه العلميه </label>
+                      <input type="text" class="form-control" placeholder="اكتب اسم الدرجة العلمية" />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">معلومات عنى
+                      </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn  btn-light hvr-bob"> حفظ </button>
+                  </form>
+                </div>
+              </div>
+              <!-- finish first content -->
+              <!-- start second content -->
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="data-work">
+                  <form>
+                    <div class="append">
+                      <label for="exampleInputtext"> خدماتى </label>
+                      <span class="btn add append-btn"> اضافه خدمه + </span>
+                      <div class="form-group">
+
+                        <input type="text" class="form-control" placeholder=" أضف خدامتك " />
+                      </div>
+                    </div>
+                    <script>
+                      $(".append-btn").click(function () {
+                        $('.append').after('<div class="append"> <label for="exampleInputtext"> خدماتى </label> <span class="btn add remove-btn"> حذف </span><div class="form-group"><input type="text" class="form-control" placeholder=" أضف خدامتك "></div></div>');
+                        $('.selectpicker').selectpicker('render');
+                      });
+
+                      $(".data-work").on("click", ".remove-btn", function (e) {
+                        $(this).parents('.append').remove();
+                      });
+                    </script>
+                    <div class="form-group">
+                      <label for="exampleInputtext">مواعيد العمل </label>
+                      <input type="text" class="form-control" placeholder="  أدخل مواعيد العمل " />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputtext"> سعر الكشف </label>
+                      <input type="text" class="form-control" placeholder="  أدخل  سعر الكشف " />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputtext"> رقم الهاتف </label>
+                      <input type="text" class="form-control" placeholder="  أدخل  رقم الهاتف " />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea2">تعليمات للمرضى
+                      </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"
+                        placeholder="أكتب تعليمات للمرضى هنا لتظهر في ملفك الشخصى">
+                        </textarea>
+                    </div>
+
+                    <button type="submit" class="btn  btn-light anther hvr-bob">
+                      حفظ
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-- finish second content -->
+              <!-- start third content -->
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <div class="available-time">
+                  <h5>مواعيد العمل</h5>
+                  <p>
+                    قم بتحديد مواعيد العمل المتاحه لك .. فقط قم باختيار
+                    التاريخ وحدد الأوقات المناسبه لك لاستقبال طلبات الكشف
+                  </p>
+                  <form>
+                    <div class="row">
+                      <div class="form-group col-lg-6 col-md-6">
+                        <p>أدخل اليوم المطلوب</p>
+
+                        <input type="text" id="datepicker">
+                      </div>
+                      <div class="form-group col-lg-6 col-md-6" id="items">
+                        <label for="exampleFormControlSelect5">مدة الانتظار (بالدقائق)
+                        </label>
+                        <select class="form-control minute selectpicker" id="exampleFormControlSelect5">
+                          <option>5</option>
+                          <option>10</option>
+                          <option>15</option>
+                          <option>20</option>
+                          <option>25</option>
+                          <option>30</option>
+                          <option>35</option>
+                          <option>40</option>
+                          <option>45</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="day">
+                      <i class="fas fa-calendar-day"></i>
+                      <h5>السبت</h5>
+                    </div>
+
+                    <div class="append-day">
+                      <span class="btn btn-block append-btn-day">
+                        اضافة +
+                      </span>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>من
+                            </label>
+                            <select class="form-control field selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>الي
+                            </label>
+                            <select class="form-control field selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <i class="fas fa-calendar-day"></i>
+                      <h5>الأحد</h5>
+                    </div>
+
+                    <div class="append-day">
+                      <span class="btn btn-block append-btn-day">
+                        اضافة +
+                      </span>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>من
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>الي
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <i class="fas fa-calendar-day"></i>
+                      <h5>الأثنين</h5>
+                    </div>
+
+                    <div class="append-day">
+                      <span class="btn btn-block append-btn-day">
+                        اضافة +
+                      </span>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>من
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>الي
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <i class="fas fa-calendar-day"></i>
+                      <h5>الثلاثاء</h5>
+                    </div>
+
+                    <div class="append-day">
+                      <span class="btn btn-block append-btn-day">
+                        اضافة +
+                      </span>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>من
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>الي
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <i class="fas fa-calendar-day"></i>
+                      <h5>الأربعاء</h5>
+                    </div>
+
+                    <div class="append-day">
+                      <span class="btn btn-block append-btn-day"> اضافة + </span>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>من
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>الي
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <i class="fas fa-calendar-day"></i>
+                      <h5>الخميس</h5>
+                    </div>
+
+                    <div class="append-day">
+                      <span class="btn btn-block append-btn-day">
+                        اضافة +
+                      </span>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>من
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>الي
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <i class="fas fa-calendar-day"></i>
+                      <h5>الحمعه</h5>
+                    </div>
+
+                    <div class="append-day">
+                      <span class="btn btn-block append-btn-day">
+                        اضافة +
+                      </span>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>من
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <label for="exampleFormControlSelect1">
+                              <i class="fas fa-clock"></i>الي
+                            </label>
+                            <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                              <option>08:00am</option>
+                              <option>09:00am</option>
+                              <option>10:00am</option>
+                              <option>11:00am</option>
+                              <option>12:00am</option>
+                              <option>01:00pm</option>
+                              <option>02:00pm</option>
+                              <option>03:00pm</option>
+                              <option>04:00pm</option>
+                              <option>05:00pm</option>
+                              <option>06:00pm</option>
+                              <option>07:00pm</option>
+                              <option>08:00pm</option>
+                              <option>09:00pm</option>
+                              <option>10:00pm</option>
+                              <option>11:00pm</option>
+                              <option>12:00pm</option>
+                              <option>01:00am</option>
+                              <option>02:00am</option>
+                              <option>03:00am</option>
+                              <option>04:00am</option>
+                              <option>05:00am</option>
+                              <option>06:00am</option>
+                              <option>07:00am</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-light anther ava hvr-bob">
+                      حفظ
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-- finish third content -->
+              <!-- start fourth content -->
+              <div class="tab-pane fade" id="v-pills-location" role="tabpanel" aria-labelledby="v-pills-location-tab">
+                <div class="location">
+                  <div class="container">
+                    <iframe class="embed-responsive-item"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13671323.845502045!2d8.17936433656703!3d33.22129065772561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb1f895d671d5b66!2sCRAZY%20IDEA!5e0!3m2!1sen!2seg!4v1623141692056!5m2!1sen!2seg"
+                      width="1000" height="850" style="border: 0" allowfullscreen="yes" loading="lazy"></iframe>
+                    <div class="manual-search">
+                      <h4>تحديد الموقع يدوي</h4>
+                      <p>
+                        قم بملىء البيانات التاليه ان كنت ترغب في تحديد موقعك
+                        يدويا
+                      </p>
+                      <form action="">
+                        <div class="form-group">
+                          <select class="form-control selectpicker" id="exampleFormControlSelect6">
+                            <option value="Select">أختر المحافظه</option>
+                            <option value="2"></option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control selectpicker" id="exampleFormControlSelect1">
+                            <option value="Select">أختر المدينه</option>
+                            <option value="3"></option>
+                          </select>
+                        </div>
+                        <div class="form-group-area">
+                          <label for="exampleInputtext"> </label>
+                          <input type="text" class="form-control" placeholder="  أدخل اسم المنطقه   " />
+                        </div>
+                        <button type="submit" class="btn  btn-light hvr-bob">
+                          حفظ
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- finish fourth content -->
+            </div>
+            <!-- finish nav content -->
+          </div>
+        </div>
+        <!-- finish row -->
+      </div>
+    </div>
+  </section>
+  <!-- upload image in js -->
+  <script>
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          $("#imagePreview").css(
+            "background-image",
+            "url(" + e.target.result + ")"
+          );
+          $("#imagePreview").hide();
+          $("#imagePreview").fadeIn(650);
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+    $("#imageUpload").change(function () {
+      readURL(this);
+    });
+  </script>
+
+  <!-- append service in js -->
+  <script>
+    $(function () {
+      $(".append-btn-day").on("click", function () {
+        var ele = $(this).closest(".append-day").clone(true);
+        $(this).closest(".append-day").after(ele);
+      });
+    });
+  </script>
+  <!-- append service in js -->
+  <!-- date piker js -->
+  <script>
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+  </script>
+  <!-- date piker js -->
+
+
+
+  <!-- ? ======= footer =========== -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-3 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center justify-content-sm-center">
+          <img src="../../media/image/logo-footer.svg" alt="logo-footer">
+          <ul class="socialicon mt-2">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram icon"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="accordion d-lg-flex col-lg-9 col-md-12 col-sm-12" id="accordion" style="margin:0 auto;"> <a
+            href="#pages" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">لينكات سريعه</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">لينكات سريعه</div>
+            <div class="collapse d-lg-flex" id="pages" data-parent="#accordion">
+              <ul>
+                <li> <a class="hvr-float-shadow" href="../basic/terms.html">شروط الاستخدام</a></li>
+                <li> <a class="hvr-float-shadow" href="../basic/privacy.html">سياسه الخصوصيه</a></li>
+                <li> <a class="hvr-float-shadow" href="../basic/about.html">من نحن</a></li>
+                <li> <a class="hvr-float-shadow" href="../basic/contact.html">اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#other" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">إحجز عن طريق</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">إحجز عن طريق</div>
+            <div class="collapse d-lg-flex" id="other" data-parent="#accordion">
+              <ul>
+                <li> <a class="hvr-float-shadow" href="specialty.html">التخصص</a></li>
+                <li> <a class="hvr-float-shadow" href="areas.html">المنطقه</a></li>
+                <li> <a class="hvr-float-shadow" href="hospitals.html">المستشفي</a></li>
+                <li> <a class="hvr-float-shadow" href="clinics.html">المراكز الطبيه والعيادات</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#doctor" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">الكادر الطبي</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">الكادر الطبي</div>
+            <div class="collapse d-lg-flex" id="doctor" data-parent="#accordion">
+              <ul>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كطبيب</a></li>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كممرض</a></li>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كمركز طبي</a></li>
+                <li> <a class="hvr-float-shadow" href="#">إنضم كصيدلي</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#download" class="text-center mb-3 h3 nav-link p-0 d-block d-lg-none d-xl-none"
+            data-toggle="collapse">متوفر علي</a>
+          <div class="col-lg-3 col-md-12 col-sm-12 p-0 col-links">
+            <div class="h3 d-none d-lg-block d-xl-block">متوفر علي</div>
+            <div class="collapse d-lg-flex" id="download" data-parent="#accordion">
+              <ul>
+                <a href="#">
+                  <li class="hvr-icon-buzz-out"> <img class="hvr-icon" src="../../media/image/icon/google-play.png"
+                      alt="phone-icon" /></li>
+                </a>
+                <a href="#">
+                  <li class="hvr-icon-buzz-out"> <img class="hvr-icon" src="../../media/image/icon/apple-store.png"
+                      alt="mail-icon" /></li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="item col-sm-12">
+              <p class="my-3 text-center">حقوق النشر محفوظه @ شفاء 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ? ======= footer =========== -->
+
+  <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

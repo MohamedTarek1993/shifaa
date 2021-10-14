@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.624" height="22.624" viewBox="0 0 22.624 22.624">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8150" data-name="Rectangle 8150" width="16" height="16" transform="translate(0 0)" fill="#151534" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="price_3" data-name="price 3" transform="matrix(0.719, 0.695, -0.695, 0.719, 11.115, 0)" clip-path="url(#clip-path)">
+    <g id="fi-rr-ticket" transform="translate(2 0)">
+      <path id="Path_15361" data-name="Path 15361" d="M8.667,0H8.58A1.347,1.347,0,0,0,7.286,1.021a1.333,1.333,0,0,1-2.572,0A1.347,1.347,0,0,0,3.42,0H3.333A3.337,3.337,0,0,0,0,3.333V14a2,2,0,0,0,2,2H3.42a1.347,1.347,0,0,0,1.294-1.021,1.333,1.333,0,0,1,2.572,0A1.347,1.347,0,0,0,8.58,16H10a2,2,0,0,0,2-2V3.333A3.337,3.337,0,0,0,8.667,0ZM10,14.667l-1.429-.042a2.667,2.667,0,0,0-5.151.042H2A.667.667,0,0,1,1.333,14V11.333H2.667a.667.667,0,1,0,0-1.333H1.333V3.333a2,2,0,0,1,2-2l.1.042A2.673,2.673,0,0,0,6,3.333a2.714,2.714,0,0,0,2.6-2h.071a2,2,0,0,1,2,2V10H9.333a.667.667,0,0,0,0,1.333h1.333V14A.667.667,0,0,1,10,14.667Z" transform="translate(0)" fill="#151534"/>
+      <path id="Path_15362" data-name="Path 15362" d="M2,0H.667a.667.667,0,0,0,0,1.333H2A.667.667,0,0,0,2,0Z" transform="translate(4.667 10)" fill="#151534"/>
+    </g>
+  </g>
+</svg>

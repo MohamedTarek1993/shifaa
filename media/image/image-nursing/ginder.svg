@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="22" viewBox="0 0 26 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8506" data-name="Rectangle 8506" width="16" height="16" transform="translate(1672 723)" fill="#151534" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_8507" data-name="Rectangle 8507" width="16" height="16" transform="translate(1690 723)" fill="#151534" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="ginder" transform="translate(-1672 -723)">
+    <g id="Mask_Group_1692" data-name="Mask Group 1692" clip-path="url(#clip-path)">
+      <g id="men-line_3_" data-name="men-line (3)" transform="translate(1672 723)">
+        <path id="Path_15761" data-name="Path 15761" d="M0,0H16V16H0Z" fill="none"/>
+        <path id="Path_15762" data-name="Path 15762" d="M10.033,5.691,12.39,3.333H9.333V2h5.333V7.333H13.333V4.276L10.975,6.634a5,5,0,1,1-.943-.943ZM7,13.333A3.667,3.667,0,1,0,3.333,9.667,3.667,3.667,0,0,0,7,13.333Z" fill="#151534"/>
+      </g>
+    </g>
+    <g id="Mask_Group_1691" data-name="Mask Group 1691" transform="translate(-8 6)" clip-path="url(#clip-path-2)">
+      <g id="women-line_3_" data-name="women-line (3)" transform="translate(1690 723)">
+        <path id="Path_15759" data-name="Path 15759" d="M0,0H16V16H0Z" fill="none"/>
+        <path id="Path_15760" data-name="Path 15760" d="M7.333,10.623a5,5,0,1,1,1.333,0V12H12v1.333H8.667V16H7.333V13.333H4V12H7.333ZM8,9.333A3.667,3.667,0,1,0,4.333,5.667,3.667,3.667,0,0,0,8,9.333Z" fill="#151534"/>
+      </g>
+    </g>
+  </g>
+</svg>

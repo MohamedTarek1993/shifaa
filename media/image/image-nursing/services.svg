@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8583" data-name="Rectangle 8583" width="32" height="32" transform="translate(1638 1388)" fill="#3f4394" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1739" data-name="Mask Group 1739" transform="translate(-1638 -1388)" clip-path="url(#clip-path)">
+    <g id="stethoscope-line_7_" data-name="stethoscope-line (7)" transform="translate(1638 1388)">
+      <path id="Path_15883" data-name="Path 15883" d="M0,0H32V32H0Z" fill="none"/>
+      <path id="Path_15884" data-name="Path 15884" d="M13.333,6V8.667H10.667V14a5.333,5.333,0,1,0,10.667,0V8.667H18.667V6h4A1.334,1.334,0,0,1,24,7.333V14a8,8,0,0,1-6.667,7.889V24a4.667,4.667,0,0,0,9.033,1.649,4,4,0,1,1,2.732.2A7.334,7.334,0,0,1,14.667,24V21.889A8,8,0,0,1,8,14V7.333A1.334,1.334,0,0,1,9.333,6ZM28,20.667A1.333,1.333,0,1,0,29.333,22,1.334,1.334,0,0,0,28,20.667Z" transform="translate(-2.667 -2)" fill="#3f4394"/>
+    </g>
+  </g>
+</svg>

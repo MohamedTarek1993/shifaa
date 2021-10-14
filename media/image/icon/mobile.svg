@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8499" data-name="Rectangle 8499" width="32" height="32" transform="translate(1648.333 2869)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_27780" data-name="Group 27780" transform="translate(-1636.333 -2865)">
+    <rect id="Rectangle_8498" data-name="Rectangle 8498" width="56" height="56" rx="4" transform="translate(1636.333 2865)" fill="#3f4394"/>
+    <g id="Mask_Group_1601" data-name="Mask Group 1601" transform="translate(0 8)" clip-path="url(#clip-path)">
+      <g id="smartphone-line" transform="translate(1648.333 2869)">
+        <path id="Path_15567" data-name="Path 15567" d="M0,0H32V32H0Z" fill="none"/>
+        <path id="Path_15568" data-name="Path 15568" d="M9.333,5.333V26.667H22.667V5.333ZM8,2.667H24A1.333,1.333,0,0,1,25.333,4V28A1.333,1.333,0,0,1,24,29.333H8A1.333,1.333,0,0,1,6.667,28V4A1.333,1.333,0,0,1,8,2.667Zm8,20A1.333,1.333,0,1,1,14.667,24,1.333,1.333,0,0,1,16,22.667Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
